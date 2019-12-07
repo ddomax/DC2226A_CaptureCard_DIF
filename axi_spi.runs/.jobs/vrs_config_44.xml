@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="axi_spi_top_system_ila_0_1_synth_1" LaunchDir="D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_system_ila_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_spi_top_jtag_axi_0_0_synth_1" LaunchDir="D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_jtag_axi_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_spi_top_clk_wiz_0_0_synth_1" LaunchDir="D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_spi_top_rst_clk_wiz_0_100M_0_synth_1" LaunchDir="D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_rst_clk_wiz_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_spi_top_jesd204_0_0_synth_1" LaunchDir="D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_jesd204_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_spi_top_xbar_0_synth_1" LaunchDir="D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_spi_top_axi_quad_spi_0_0_synth_1" LaunchDir="D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_axi_quad_spi_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_spi_top_auto_pc_0_synth_1" LaunchDir="D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/Vivado2018_wrk/axi_spi/axi_spi.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="axi_spi_top_system_ila_0_1_synth_1"/>
+		<Parent Id="axi_spi_top_jtag_axi_0_0_synth_1"/>
+		<Parent Id="axi_spi_top_clk_wiz_0_0_synth_1"/>
+		<Parent Id="axi_spi_top_rst_clk_wiz_0_100M_0_synth_1"/>
+		<Parent Id="axi_spi_top_jesd204_0_0_synth_1"/>
+		<Parent Id="axi_spi_top_xbar_0_synth_1"/>
+		<Parent Id="axi_spi_top_axi_quad_spi_0_0_synth_1"/>
+		<Parent Id="axi_spi_top_auto_pc_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/Vivado2018_wrk/axi_spi/axi_spi.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="axi_spi_top_system_ila_0_1_synth_1"/>
+		<Parent Id="axi_spi_top_jtag_axi_0_0_synth_1"/>
+		<Parent Id="axi_spi_top_clk_wiz_0_0_synth_1"/>
+		<Parent Id="axi_spi_top_rst_clk_wiz_0_100M_0_synth_1"/>
+		<Parent Id="axi_spi_top_jesd204_0_0_synth_1"/>
+		<Parent Id="axi_spi_top_xbar_0_synth_1"/>
+		<Parent Id="axi_spi_top_axi_quad_spi_0_0_synth_1"/>
+		<Parent Id="axi_spi_top_auto_pc_0_synth_1"/>
+	</Run>
+</Runs>
+

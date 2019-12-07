@@ -1,0 +1,108 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Aug  4 16:29:22 2019
+# Process ID: 9628
+# Current directory: D:/Vivado2018_wrk/axi_spi_xcross
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12800 D:\Vivado2018_wrk\axi_spi_xcross\axi_spi.xpr
+# Log file: D:/Vivado2018_wrk/axi_spi_xcross/vivado.log
+# Journal file: D:/Vivado2018_wrk/axi_spi_xcross\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.xpr
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper_1MBaud.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper_1MBaud.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210251A08870}
+set_property PARAM.FREQUENCY 1000000 [get_hw_targets localhost:3121/xilinx_tcf/Digilent/210251A08870]
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210251A08870}
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper_1MBaud.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210251A08870}
+set_property PARAM.FREQUENCY 125000 [get_hw_targets localhost:3121/xilinx_tcf/Digilent/210251A08870]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper_1MBaud.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210251A08870}
+set_property PARAM.FREQUENCY 125000 [get_hw_targets localhost:3121/xilinx_tcf/Digilent/210251A08870]
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210251A08870}
+set_property PROGRAM.FILE {C:/Xilinx/Vivado/2018.1/data/xicom/cfgmem/bitfile/spi_xc7k325t_pullnone.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+connect_hw_server
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper_1MBaud.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper_1MBaud.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper_adc2.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper_1MBaud.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper_adc2.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper_1MBaud.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]

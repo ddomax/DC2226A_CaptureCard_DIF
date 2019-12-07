@@ -1,0 +1,417 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat May  4 12:18:45 2019
+# Process ID: 2928
+# Current directory: D:/Vivado2018_wrk/axi_spi_xcross
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18352 D:\Vivado2018_wrk\axi_spi_xcross\axi_spi.xpr
+# Log file: D:/Vivado2018_wrk/axi_spi_xcross/vivado.log
+# Journal file: D:/Vivado2018_wrk/axi_spi_xcross\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.xpr
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_nets data_rearrange_0_adc0_sample0] [get_bd_nets data_rearrange_0_adc0_sample1] [get_bd_nets data_rearrange_0_adc1_sample0] [get_bd_nets data_rearrange_0_adc1_sample1] [get_bd_cells system_ila_2]
+delete_bd_objs [get_bd_nets axi_traffic_gen_0_status] [get_bd_cells system_ila_0]
+undo
+undo
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { data_rearrange_0_adc0_sample0 axi_quad_spi_0_io0_o clk_wiz_0_clk_out1 data_rearrange_0_adc0_sample1 clk_wiz_0_clk_out2 jesd204_0_rx_end_of_frame jesd204_0_rx_tdata rst_clk_wiz_0_100M_interconnect_aresetn axi_quad_spi_0_sck_t init_delay_1_o_resetn axi_quad_spi_0_io0_t inv_0_O rst_clk_wiz_0_100M_peripheral_aresetn axi_quad_spi_0_ss_o jesd204_0_rx_core_clk_out resetn_1 axi_quad_spi_0_ss_t jesd204_0_rx_start_of_frame rxn_1 data_rearrange_0_adc1_sample0 data_rearrange_0_adc1_sample1 util_ds_buf_0_OBUF_DS_N jesd204_0_rx_sync util_ds_buf_0_OBUF_DS_P Tgate_1_O Tgate_3_O jesd204_0_rx_tvalid clk_wiz_0_locked rxp_1 axi_quad_spi_0_io1_o GBT_REFCLK_n_1 axi_traffic_gen_0_status jesd204_0_rx_end_of_multiframe axi_quad_spi_0_io1_t Tgate_width5_0_O init_delay_0_o_resetn Tgate_0_O jesd204_0_rx_aresetn GBT_REFCLK_p_1 Net Net1 Net2 Net3 jesd204_0_rx_start_of_multiframe axi_traffic_gen_0_done jesd204_0_rx_frame_error axi_traffic_gen_1_done axi_quad_spi_0_sck_o } ]
+disconnect_bd_net [get_bd_net jesd204_0_rx_end_of_frame] [get_bd_pins system_ila_1/probe5]
+disconnect_bd_net [get_bd_net jesd204_0_rx_tvalid] [get_bd_pins system_ila_1/probe1]
+disconnect_bd_net [get_bd_net jesd204_0_rx_tdata] [get_bd_pins system_ila_1/probe2]
+disconnect_bd_net [get_bd_net jesd204_0_rx_aresetn] [get_bd_pins system_ila_1/probe3]
+disconnect_bd_net [get_bd_net jesd204_0_rx_end_of_multiframe] [get_bd_pins system_ila_1/probe7]
+disconnect_bd_net [get_bd_net jesd204_0_rx_core_clk_out] [get_bd_pins system_ila_1/probe9]
+disconnect_bd_net [get_bd_net jesd204_0_rx_sync] [get_bd_pins system_ila_1/probe0]
+disconnect_bd_net [get_bd_net jesd204_0_rx_start_of_frame] [get_bd_pins system_ila_1/probe4]
+disconnect_bd_net [get_bd_net jesd204_0_rx_start_of_multiframe] [get_bd_pins system_ila_1/probe6]
+disconnect_bd_net [get_bd_net jesd204_0_rx_frame_error] [get_bd_pins system_ila_1/probe8]
+apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila_1]
+disconnect_bd_net [get_bd_net axi_quad_spi_0_io0_o] [get_bd_pins system_ila_0/probe1]
+disconnect_bd_net [get_bd_net Tgate_3_O] [get_bd_pins system_ila_0/probe8]
+disconnect_bd_net [get_bd_net axi_quad_spi_0_sck_t] [get_bd_pins system_ila_0/probe7]
+disconnect_bd_net [get_bd_net axi_quad_spi_0_io0_t] [get_bd_pins system_ila_0/probe2]
+disconnect_bd_net [get_bd_net axi_traffic_gen_0_status] [get_bd_pins system_ila_0/probe11]
+disconnect_bd_net [get_bd_net Tgate_1_O] [get_bd_pins system_ila_0/probe4]
+disconnect_bd_net [get_bd_net axi_quad_spi_0_ss_o] [get_bd_pins system_ila_0/probe10]
+disconnect_bd_net [get_bd_net axi_quad_spi_0_io1_o] [get_bd_pins system_ila_0/probe3]
+disconnect_bd_net [get_bd_net axi_quad_spi_0_ss_t] [get_bd_pins system_ila_0/probe6]
+disconnect_bd_net [get_bd_net axi_quad_spi_0_io1_t] [get_bd_pins system_ila_0/probe5]
+disconnect_bd_net [get_bd_net Tgate_0_O] [get_bd_pins system_ila_0/probe0]
+disconnect_bd_net [get_bd_net axi_traffic_gen_0_done] [get_bd_pins system_ila_0/probe12]
+disconnect_bd_net [get_bd_net axi_quad_spi_0_sck_o] [get_bd_pins system_ila_0/probe9]
+apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila_0]
+disconnect_bd_net [get_bd_net data_rearrange_0_adc0_sample0] [get_bd_pins system_ila_2/probe0]
+disconnect_bd_net [get_bd_net data_rearrange_0_adc0_sample1] [get_bd_pins system_ila_2/probe1]
+disconnect_bd_net [get_bd_net data_rearrange_0_adc1_sample0] [get_bd_pins system_ila_2/probe2]
+disconnect_bd_net [get_bd_net data_rearrange_0_adc1_sample1] [get_bd_pins system_ila_2/probe3]
+apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila_2]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_intf_nets { axi_traffic_gen_1_M_AXI_LITE_CH1 jtag_axi_0_axi_periph_M01_AXI jtag_axi_0_axi_periph_M00_AXI axi_traffic_gen_0_M_AXI_LITE_CH1 diff_clock_rtl_0_1 axi_traffic_gen_2_M_AXI_LITE_CH1 jtag_axi_0_M_AXI } ]
+disconnect_bd_intf_net [get_bd_intf_net jtag_axi_0_axi_periph_M00_AXI] [get_bd_intf_pins system_ila_0/SLOT_0_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila_0]
+endgroup
+set_property location {2669 430} [get_bd_ports CS]
+set_property  ip_repo_paths  D:/Vivado2018_wrk/UART_ILA_pack/ip_repo [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:uart_ila_top:1.0 uart_ila_top_0
+endgroup
+set_property location {6.5 2598 -1161} [get_bd_cells uart_ila_top_0]
+add_files -norecurse D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/new/data_comb.v
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference data_comb data_comb_0
+set_property location {7 2647 -854} [get_bd_cells uart_ila_top_0]
+set_property location {7 2604 -1144} [get_bd_cells data_comb_0]
+set_property location {7 2599 -1151} [get_bd_cells data_comb_0]
+connect_bd_net [get_bd_pins data_rearrange_0/adc0_sample0] [get_bd_pins data_comb_0/i_data0]
+connect_bd_net [get_bd_pins data_rearrange_0/adc0_sample1] [get_bd_pins data_comb_0/i_data1]
+connect_bd_net [get_bd_pins data_rearrange_0/adc1_sample0] [get_bd_pins data_comb_0/i_data2]
+connect_bd_net [get_bd_pins data_rearrange_0/adc1_sample1] [get_bd_pins data_comb_0/i_data3]
+set_property location {7.5 2909 -1125} [get_bd_cells uart_ila_top_0]
+set_property location {8 2903 -1103} [get_bd_cells uart_ila_top_0]
+set_property location {8 2908 -1108} [get_bd_cells uart_ila_top_0]
+startgroup
+connect_bd_net [get_bd_pins uart_ila_top_0/din_0] [get_bd_pins data_comb_0/o_data]
+connect_bd_net [get_bd_pins data_comb_0/o_data] [get_bd_pins uart_ila_top_0/reset_0]
+endgroup
+undo
+connect_bd_net [get_bd_pins uart_ila_top_0/din_0] [get_bd_pins data_comb_0/o_data]
+update_module_reference axi_spi_top_data_comb_0_0
+update_compile_order -fileset sources_1
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {64} CONFIG.MMCM_DIVCLK_DIVIDE {2} CONFIG.MMCM_CLKFBOUT_MULT_F {10.875} CONFIG.MMCM_CLKOUT0_DIVIDE_F {10.875} CONFIG.MMCM_CLKOUT1_DIVIDE {17} CONFIG.CLKOUT1_JITTER {121.934} CONFIG.CLKOUT1_PHASE_ERROR {92.529} CONFIG.CLKOUT2_JITTER {133.253} CONFIG.CLKOUT2_PHASE_ERROR {92.529}] [get_bd_cells clk_wiz_0]
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out2]
+endgroup
+connect_bd_net [get_bd_pins uart_ila_top_0/rd_clk_0] [get_bd_pins clk_wiz_0/clk_out2]
+startgroup
+make_bd_pins_external  [get_bd_pins uart_ila_top_0/rx_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins uart_ila_top_0/tx_0]
+endgroup
+connect_bd_net [get_bd_ports resetn] [get_bd_pins uart_ila_top_0/reset_0]
+delete_bd_objs [get_bd_nets jesd204_0_rx_aresetn]
+delete_bd_objs [get_bd_nets jesd204_0_rx_start_of_frame]
+delete_bd_objs [get_bd_nets jesd204_0_rx_end_of_frame]
+delete_bd_objs [get_bd_nets jesd204_0_rx_start_of_multiframe]
+delete_bd_objs [get_bd_nets jesd204_0_rx_end_of_multiframe]
+delete_bd_objs [get_bd_nets jesd204_0_rx_frame_error]
+delete_bd_objs [get_bd_nets axi_traffic_gen_0_status]
+connect_bd_net [get_bd_pins uart_ila_top_0/wr_clk_0] [get_bd_pins jesd204_0/rx_core_clk_out]
+save_bd_design
+reset_run synth_1
+reset_run axi_spi_top_clk_wiz_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:uart_ila_top:1.0 [get_ips  axi_spi_top_uart_ila_top_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips axi_spi_top_uart_ila_top_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:uart_ila_top:1.0 [get_ips  axi_spi_top_uart_ila_top_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips axi_spi_top_uart_ila_top_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+catch { config_ip_cache -export [get_ips -all axi_spi_top_clk_wiz_0_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_xbar_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_uart_ila_top_0_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+launch_runs -jobs 8 {axi_spi_top_clk_wiz_0_0_synth_1 axi_spi_top_data_comb_0_0_synth_1 axi_spi_top_uart_ila_top_0_0_synth_1}
+export_simulation -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -directory D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files -ipstatic_source_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/modelsim} {questa=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/questa} {riviera=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/riviera} {activehdl=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_param general.maxThreads 8
+open_run synth_1 -name synth_1
+place_ports rx_0_0 AC20
+place_ports tx_0_0 AJ21
+set_property IOSTANDARD LVCMOS33 [get_ports [list rx_0_0]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list tx_0_0]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_param general.maxThreads 8
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+disconnect_bd_net /resetn_1 [get_bd_pins uart_ila_top_0/reset_0]
+connect_bd_net [get_bd_pins uart_ila_top_0/reset_0] [get_bd_pins inv_0/O]
+save_bd_design
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_param general.maxThreads 8
+set_param general.maxThreads 8
+set_param general.maxThreads 8
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:uart_ila_top:1.0 [get_ips  axi_spi_top_uart_ila_top_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips axi_spi_top_uart_ila_top_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+catch { config_ip_cache -export [get_ips -all axi_spi_top_xbar_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_uart_ila_top_0_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+launch_runs -jobs 8 axi_spi_top_uart_ila_top_0_0_synth_1
+export_simulation -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -directory D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files -ipstatic_source_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/modelsim} {questa=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/questa} {riviera=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/riviera} {activehdl=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_param general.maxThreads 8
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:c_counter_binary:12.0 c_counter_binary_0
+endgroup
+delete_bd_objs [get_bd_cells c_counter_binary_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:dds_compiler:6.0 dds_compiler_0
+endgroup
+undo
+undo
+redo
+redo
+delete_bd_objs [get_bd_cells dds_compiler_0]
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:uart_ila_top:1.0 [get_ips  axi_spi_top_uart_ila_top_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips axi_spi_top_uart_ila_top_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+catch { config_ip_cache -export [get_ips -all axi_spi_top_xbar_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_uart_ila_top_0_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+launch_runs -jobs 8 axi_spi_top_uart_ila_top_0_0_synth_1
+export_simulation -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -directory D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files -ipstatic_source_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/modelsim} {questa=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/questa} {riviera=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/riviera} {activehdl=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_ip_catalog -rebuild
+upgrade_ip -vlnv xilinx.com:user:uart_ila_top:1.0 [get_ips  axi_spi_top_uart_ila_top_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips axi_spi_top_uart_ila_top_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+catch { config_ip_cache -export [get_ips -all axi_spi_top_xbar_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_uart_ila_top_0_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+launch_runs -jobs 8 axi_spi_top_uart_ila_top_0_0_synth_1
+export_simulation -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -directory D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files -ipstatic_source_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/modelsim} {questa=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/questa} {riviera=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/riviera} {activehdl=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_param general.maxThreads 8
+set_param general.maxThreads 8
+set_param general.maxThreads 8
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:uart_ila_top:1.0 [get_ips  axi_spi_top_uart_ila_top_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips axi_spi_top_uart_ila_top_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+catch { config_ip_cache -export [get_ips -all axi_spi_top_xbar_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_uart_ila_top_0_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+launch_runs -jobs 8 axi_spi_top_uart_ila_top_0_0_synth_1
+export_simulation -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -directory D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files -ipstatic_source_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/modelsim} {questa=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/questa} {riviera=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/riviera} {activehdl=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_param general.maxThreads 8
+'The specified amount of data was not returned within the Timeout period.'
+set_param general.maxThreads 8
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+close_design
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:uart_ila_top:1.0 [get_ips  axi_spi_top_uart_ila_top_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips axi_spi_top_uart_ila_top_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+catch { config_ip_cache -export [get_ips -all axi_spi_top_xbar_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_uart_ila_top_0_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+launch_runs -jobs 8 axi_spi_top_uart_ila_top_0_0_synth_1
+export_simulation -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -directory D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files -ipstatic_source_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/modelsim} {questa=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/questa} {riviera=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/riviera} {activehdl=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+validate_bd_design -force
+report_ip_status -name ip_status 
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+update_ip_catalog -rebuild
+set_param general.maxThreads 8
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:dds_compiler:6.0 dds_compiler_0
+endgroup
+set_property -dict [list CONFIG.DDS_Clock_Rate {125} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Output_Width {14} CONFIG.Phase_Increment {Streaming} CONFIG.Output_Selection {Sine} CONFIG.Has_Phase_Out {false} CONFIG.Frequency_Resolution {0.4} CONFIG.Noise_Shaping {None} CONFIG.Phase_Width {16} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Latency {7} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_bd_cells dds_compiler_0]
+connect_bd_net [get_bd_pins dds_compiler_0/aclk] [get_bd_pins jesd204_0/rx_core_clk_out]
+startgroup
+set_property -dict [list CONFIG.Output_Width {16}] [get_bd_cells dds_compiler_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Channels {1} CONFIG.Output_Width {14} CONFIG.Noise_Shaping {None} CONFIG.Phase_Width {16} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.M_PHASE_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {0}] [get_bd_cells dds_compiler_0]
+endgroup
+delete_bd_objs [get_bd_nets data_rearrange_0_adc1_sample0]
+delete_bd_objs [get_bd_nets data_rearrange_0_adc1_sample1]
+connect_bd_net [get_bd_pins dds_compiler_0/m_axis_data_tdata] [get_bd_pins data_comb_0/i_data2]
+connect_bd_net [get_bd_pins data_comb_0/i_data3] [get_bd_pins dds_compiler_0/m_axis_data_tdata]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_0
+endgroup
+connect_bd_net [get_bd_pins vio_0/clk] [get_bd_pins jesd204_0/rx_core_clk_out]
+startgroup
+set_property -dict [list CONFIG.C_PROBE_OUT0_WIDTH {16} CONFIG.C_EN_PROBE_IN_ACTIVITY {0} CONFIG.C_NUM_PROBE_IN {0}] [get_bd_cells vio_0]
+endgroup
+connect_bd_net [get_bd_pins vio_0/probe_out0] [get_bd_pins dds_compiler_0/s_axis_phase_tdata]
+startgroup
+set_property -dict [list CONFIG.C_PROBE_OUT1_INIT_VAL {0x1} CONFIG.C_NUM_PROBE_OUT {2}] [get_bd_cells vio_0]
+endgroup
+connect_bd_net [get_bd_pins vio_0/probe_out1] [get_bd_pins dds_compiler_0/s_axis_phase_tvalid]
+update_module_reference axi_spi_top_data_comb_0_0
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:uart_ila_top:1.0 [get_ips  axi_spi_top_uart_ila_top_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips axi_spi_top_uart_ila_top_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+catch { config_ip_cache -export [get_ips -all axi_spi_top_xbar_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_uart_ila_top_0_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_dds_compiler_0_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_vio_0_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+launch_runs -jobs 8 {axi_spi_top_data_comb_0_0_synth_1 axi_spi_top_uart_ila_top_0_0_synth_1 axi_spi_top_dds_compiler_0_0_synth_1 axi_spi_top_vio_0_0_synth_1}
+export_simulation -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -directory D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files -ipstatic_source_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/modelsim} {questa=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/questa} {riviera=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/riviera} {activehdl=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+update_ip_catalog -rebuild
+validate_bd_design -force
+report_ip_status -name ip_status 
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_param general.maxThreads 8
+set_param general.maxThreads 8
+set_param general.maxThreads 8
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property OUTPUT_VALUE 1000 [get_hw_probes axi_spi_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0100 [get_hw_probes axi_spi_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+set_property OUTPUT_VALUE_RADIX UNSIGNED [get_hw_probes axi_spi_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 16384 [get_hw_probes axi_spi_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes axi_spi_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+update_module_reference axi_spi_top_data_comb_0_0
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_param general.maxThreads 8
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property OUTPUT_VALUE 16384 [get_hw_probes axi_spi_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+delete_bd_objs [get_bd_nets dds_compiler_0_m_axis_data_tdata]
+connect_bd_net [get_bd_pins data_rearrange_0/adc1_sample0] [get_bd_pins data_comb_0/i_data2]
+startgroup
+connect_bd_net [get_bd_pins data_rearrange_0/adc1_sample1] [get_bd_pins data_comb_0/i_data3]
+endgroup
+update_module_reference axi_spi_top_data_comb_0_0
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+close [ open D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/new/err_detector.v w ]
+add_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/new/err_detector.v
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference err_detector err_detector_0
+close_bd_design [get_bd_designs axi_spi_top]
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+close_bd_design [get_bd_designs axi_spi_top]

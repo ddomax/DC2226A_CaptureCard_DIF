@@ -1,0 +1,25 @@
+$date
+        2019-Feb-10 15:34:30
+$end
+$version
+        Vivado v2018.1 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " axi_spi_top_i/system_ila_1/inst/probe0_1 $end
+$var reg 1 # axi_spi_top_i/system_ila_1/inst/probe1_1 $end
+$var reg 64 $ axi_spi_top_i/system_ila_1/inst/probe2_1 [63:0] $end
+$var reg 1 d axi_spi_top_i/system_ila_1/inst/probe3_1 $end
+$var reg 4 e axi_spi_top_i/system_ila_1/inst/probe4_1 [3:0] $end
+$var reg 4 i axi_spi_top_i/system_ila_1/inst/probe5_1 [3:0] $end
+$var reg 4 m axi_spi_top_i/system_ila_1/inst/probe6_1 [3:0] $end
+$var reg 4 q axi_spi_top_i/system_ila_1/inst/probe7_1 [3:0] $end
+$var reg 8 u axi_spi_top_i/system_ila_1/inst/probe8_1 [7:0] $end
+$var reg 1 } axi_spi_top_i/system_ila_1/inst/probe9_1 $end
+$var reg 1 ~ _TRIGGER $end
+$var reg 1 !" _WINDOW $end
+$var reg 1 "" _GAP $end
+$upscope $end
+$enddefinitions $end

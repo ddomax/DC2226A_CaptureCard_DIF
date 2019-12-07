@@ -1,0 +1,60 @@
+$date
+        2019-Feb-10 15:34:28
+$end
+$version
+        Vivado v2018.1 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " axi_spi_top_i/system_ila_0/inst/probe0_1 $end
+$var reg 1 # axi_spi_top_i/system_ila_0/inst/probe1_1 $end
+$var reg 1 $ axi_spi_top_i/system_ila_0/inst/probe2_1 $end
+$var reg 1 % axi_spi_top_i/system_ila_0/inst/probe3_1 $end
+$var reg 1 & axi_spi_top_i/system_ila_0/inst/probe4_1 $end
+$var reg 1 ' axi_spi_top_i/system_ila_0/inst/probe5_1 $end
+$var reg 1 ( axi_spi_top_i/system_ila_0/inst/probe6_1 $end
+$var reg 1 ) axi_spi_top_i/system_ila_0/inst/probe7_1 $end
+$var reg 1 * axi_spi_top_i/system_ila_0/inst/probe8_1 $end
+$var reg 1 + axi_spi_top_i/system_ila_0/inst/probe9_1 $end
+$var reg 5 , axi_spi_top_i/system_ila_0/inst/probe10_1 [4:0] $end
+$var reg 2 1 axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_ar_cnt [1:0] $end
+$var reg 7 3 axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_araddr [6:0] $end
+$var reg 3 : axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_arprot [2:0] $end
+$var reg 2 = axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_aw_cnt [1:0] $end
+$var reg 7 ? axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_awaddr [6:0] $end
+$var reg 3 F axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_awprot [2:0] $end
+$var reg 2 I axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_b_cnt [1:0] $end
+$var reg 2 K axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_bresp [1:0] $end
+$var reg 2 M axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_r_cnt [1:0] $end
+$var reg 32 O axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_rdata [31:0] $end
+$var reg 2 o axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_rresp [1:0] $end
+$var reg 32 q axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_wdata [31:0] $end
+$var reg 4 3" axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_wstrb [3:0] $end
+$var reg 2 7" axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_aw_ctrl [1:0] $end
+$var reg 1 9" axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_awvalid $end
+$var reg 1 :" axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_awready $end
+$var reg 2 ;" axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_w_ctrl [1:0] $end
+$var reg 1 =" axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_wvalid $end
+$var reg 1 >" axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_wready $end
+$var reg 1 ?" axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_bvalid $end
+$var reg 2 @" axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_b_ctrl [1:0] $end
+$var reg 1 B" axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_bready $end
+$var reg 2 C" axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_ar_ctrl [1:0] $end
+$var reg 1 E" axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_arvalid $end
+$var reg 1 F" axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_arready $end
+$var reg 1 G" axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_rvalid $end
+$var reg 2 H" axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_r_ctrl [1:0] $end
+$var reg 1 J" axi_spi_top_i/system_ila_0/inst/net_slot_0_axi_rready $end
+$var reg 3 K" AR_Channel__i1_s0___jtag_axi_0_axi_periph_M00_AXI_ [2:0] $end
+$var reg 3 N" AW_Channel__i1_s0___jtag_axi_0_axi_periph_M00_AXI_ [2:0] $end
+$var reg 3 Q" B_Channel__i1_s0___jtag_axi_0_axi_periph_M00_AXI_ [2:0] $end
+$var reg 3 T" Interface__i1_s0___jtag_axi_0_axi_periph_M00_AXI_ [2:0] $end
+$var reg 3 W" R_Channel__i1_s0___jtag_axi_0_axi_periph_M00_AXI_ [2:0] $end
+$var reg 3 Z" W_Channel__i1_s0___jtag_axi_0_axi_periph_M00_AXI_ [2:0] $end
+$var reg 1 ]" _TRIGGER $end
+$var reg 1 ^" _WINDOW $end
+$var reg 1 _" _GAP $end
+$upscope $end
+$enddefinitions $end

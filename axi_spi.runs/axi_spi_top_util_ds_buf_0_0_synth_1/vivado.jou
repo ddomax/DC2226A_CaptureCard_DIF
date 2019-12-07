@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Feb 10 13:40:20 2019
+# Process ID: 25700
+# Current directory: D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_util_ds_buf_0_0_synth_1
+# Command line: vivado.exe -log axi_spi_top_util_ds_buf_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_spi_top_util_ds_buf_0_0.tcl
+# Log file: D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_util_ds_buf_0_0_synth_1/axi_spi_top_util_ds_buf_0_0.vds
+# Journal file: D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_util_ds_buf_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source axi_spi_top_util_ds_buf_0_0.tcl -notrace

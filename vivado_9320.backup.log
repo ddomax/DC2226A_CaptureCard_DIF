@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Aug  2 14:24:35 2019
+# Process ID: 9320
+# Current directory: D:/Vivado2018_wrk/axi_spi_xcross
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16488 D:\Vivado2018_wrk\axi_spi_xcross\axi_spi.xpr
+# Log file: D:/Vivado2018_wrk/axi_spi_xcross/vivado.log
+# Journal file: D:/Vivado2018_wrk/axi_spi_xcross\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado2018_wrk/UART_ILA_pack/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 946.559 ; gain = 199.723
+update_compile_order -fileset sources_1
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+Adding cell -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:ip:jtag_axi:1.2 - jtag_axi_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_100M
+Adding cell -- xilinx.com:module_ref:Tgate:1.0 - Tgate_0
+Adding cell -- xilinx.com:module_ref:Tgate:1.0 - Tgate_1
+Adding cell -- xilinx.com:module_ref:Tgate:1.0 - Tgate_3
+Adding cell -- xilinx.com:module_ref:Tgate_width5:1.0 - Tgate_width5_0
+Adding cell -- xilinx.com:ip:jesd204:7.2 - jesd204_0
+Adding cell -- xilinx.com:ip:util_ds_buf:2.1 - util_ds_buf_0
+Adding cell -- xilinx.com:module_ref:inv:1.0 - inv_0
+Adding cell -- xilinx.com:module_ref:data_rearrange:1.0 - data_rearrange_0
+Adding cell -- xilinx.com:ip:axi_traffic_gen:3.0 - axi_traffic_gen_0
+Adding cell -- xilinx.com:module_ref:init_delay:1.0 - init_delay_0
+Adding cell -- xilinx.com:ip:axi_traffic_gen:3.0 - axi_traffic_gen_1
+Adding cell -- xilinx.com:ip:axi_traffic_gen:3.0 - axi_traffic_gen_2
+Adding cell -- xilinx.com:module_ref:init_delay:1.0 - init_delay_1
+Adding cell -- xilinx.com:ip:dds_compiler:6.0 - dds_compiler_0
+Adding cell -- xilinx.com:ip:vio:3.0 - vio_0
+Adding cell -- xilinx.com:module_ref:err_detector:1.0 - err_detector_0
+Adding cell -- xilinx.com:module_ref:data_comb:1.0 - data_comb_0
+Adding cell -- xilinx.com:user:uart_ila_top:1.0 - uart_ila_top_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sclk(clk) and /Tgate_3/IO(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /jesd204_0/rx_sync(undef) and /util_ds_buf_0/OBUF_IN(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /resetn(rst) and /inv_0/I(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /inv_0/O(undef) and /uart_ila_top_0/reset_0(rst)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <axi_spi_top> from BD file <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1051.836 ; gain = 63.199
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug  2 21:00:56 2019...

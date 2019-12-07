@@ -1,0 +1,1352 @@
+
+*** Running vivado
+    with args -log axi_spi_top_jesd204_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_spi_top_jesd204_0_0.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source axi_spi_top_jesd204_0_0.tcl -notrace
+Command: synth_design -top axi_spi_top_jesd204_0_0 -part xc7k325tffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7028 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 439.445 ; gain = 118.777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0.v:55]
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_support' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_support.v:52]
+	Parameter tx_pll_sel bound to: 0 - type: integer 
+	Parameter rx_pll_sel bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_block' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_block.v:52]
+	Parameter C_COMPONENT_NAME bound to: axi_spi_top_jesd204_0_0 - type: string 
+	Parameter C_FAMILY bound to: kintex7 - type: string 
+	Parameter C_NODE_IS_TRANSMIT bound to: 0 - type: integer 
+	Parameter C_LMFC_BUFFER_SIZE bound to: 6 - type: integer 
+	Parameter C_LANES bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_axi_lite_ipif' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_ipif/axi_spi_top_jesd204_0_0_axi_lite_ipif.v:88]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 4095 - type: integer 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
+	Parameter C_NUM_ADDRESS_RANGES bound to: 1 - type: integer 
+	Parameter C_TOTAL_NUM_CE bound to: 1 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 64'b0000000000000000000000000000000000000000000000000000111111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 8'b00000001 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_slave_attachment' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_ipif/axi_spi_top_jesd204_0_0_slave_attachment.v:83]
+	Parameter C_NUM_ADDRESS_RANGES bound to: 1 - type: integer 
+	Parameter C_TOTAL_NUM_CE bound to: 1 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 64'b0000000000000000000000000000000000000000000000000000111111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 8'b00000001 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 12 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 4095 - type: integer 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+	Parameter C_INCLUDE_DPHASE_TIMER bound to: 64 - type: integer 
+	Parameter AXI_RESP_OK bound to: 2'b00 
+	Parameter AXI_RESP_SLVERR bound to: 2'b10 
+	Parameter IDLE bound to: 3'b000 
+	Parameter READING bound to: 3'b001 
+	Parameter READ_WAIT bound to: 3'b010 
+	Parameter WRITE_WAIT bound to: 3'b011 
+	Parameter WRITING bound to: 3'b100 
+	Parameter B_VALID bound to: 3'b101 
+	Parameter BRESP_WAIT bound to: 3'b110 
+	Parameter COUNTER_WIDTH bound to: 7 - type: integer 
+	Parameter DPTO_LD_VALUE bound to: 7'b0111111 
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_counter_f' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_ipif/axi_spi_top_jesd204_0_0_counter_f.v:54]
+	Parameter C_NUM_BITS bound to: 7 - type: integer 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_counter_f' (20#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_ipif/axi_spi_top_jesd204_0_0_counter_f.v:54]
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_address_decoder' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_ipif/axi_spi_top_jesd204_0_0_address_decoder.v:65]
+	Parameter C_NUM_ADDRESS_RANGES bound to: 1 - type: integer 
+	Parameter C_TOTAL_NUM_CE bound to: 1 - type: integer 
+	Parameter C_BUS_AWIDTH bound to: 12 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 64'b0000000000000000000000000000000000000000000000000000111111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 8'b00000001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_address_decoder' (21#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_ipif/axi_spi_top_jesd204_0_0_address_decoder.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_slave_attachment' (22#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_ipif/axi_spi_top_jesd204_0_0_slave_attachment.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_axi_lite_ipif' (23#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_ipif/axi_spi_top_jesd204_0_0_axi_lite_ipif.v:88]
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_register_decode' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_register_decode.v:51]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_register_decode.v:86]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_register_decode' (24#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_register_decode.v:51]
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_count_err' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_count_err.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_count_err' (25#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_count_err.v:51]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+	Parameter DEST_SYNC_FF bound to: 5 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:205]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (26#1) [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_reset_block' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_reset_block.v:47]
+	Parameter stretch_len bound to: 11 - type: integer 
+	Parameter RELEASE_RST bound to: 1'b0 
+	Parameter HOLD_RST bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1171]
+	Parameter DEST_SYNC_FF bound to: 5 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter RST_ACTIVE_HIGH bound to: 1 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter DEF_VAL bound to: 1'b0 
+	Parameter INV_DEF_VAL bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1222]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (27#1) [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1171]
+INFO: [Synth 8-226] default block is never used [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_reset_block.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_reset_block' (28#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_reset_block.v:47]
+INFO: [Synth 8-3936] Found unconnected internal register 'rx_stat_init_r1_reg' and it is trimmed from '64' to '63' bits. [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_block.v:426]
+INFO: [Synth 8-3936] Found unconnected internal register 'rx_stat_init_r2_reg' and it is trimmed from '64' to '61' bits. [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_block.v:427]
+INFO: [Synth 8-3936] Found unconnected internal register 'rx_stat_init_r3_reg' and it is trimmed from '64' to '44' bits. [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_block.v:428]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_block' (29#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_block.v:52]
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_clocking' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_clocking.v:57]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:19472]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (30#1) [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:19472]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE2' [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:19624]
+	Parameter CLKCM_CFG bound to: TRUE - type: string 
+	Parameter CLKRCV_TRST bound to: TRUE - type: string 
+	Parameter CLKSWING_CFG bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE2' (31#1) [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:19624]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (32#1) [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_clocking' (33#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_clocking.v:57]
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_phy' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_phy_support' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy_support.v:52]
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_phy_block' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy_block.v:54]
+	Parameter tx_pll_sel bound to: 0 - type: integer 
+	Parameter rx_pll_sel bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_phy_sync_block' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy_sync_block.v:77]
+	Parameter INITIALISE bound to: 1'b0 
+	Parameter TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FD' [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3725]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FD' (34#1) [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3725]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_phy_sync_block' (35#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy_sync_block.v:77]
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt.v:73]
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt_init' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt_init.v:71]
+	Parameter EXAMPLE_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+	Parameter USE_BUFG bound to: 0 - type: integer 
+	Parameter STABLE_CLOCK_PERIOD bound to: 10 - type: integer 
+	Parameter EXAMPLE_USE_CHIPSCOPE bound to: 1 - type: integer 
+	Parameter RX_CDRLOCK_TIME bound to: 20000 - type: integer 
+	Parameter WAIT_TIME_CDRLOCK bound to: 2000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt_multi_gt' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt_multi_gt.v:70]
+	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter RX_DFE_KL_CFG2_IN bound to: 806439084 - type: integer 
+	Parameter USE_BUFG bound to: 0 - type: integer 
+	Parameter PMA_RSV_IN bound to: 99456 - type: integer 
+	Parameter QPLL_FBDIV_TOP bound to: 64 - type: integer 
+	Parameter QPLL_FBDIV_IN bound to: 10'b0011100000 
+	Parameter QPLL_FBDIV_RATIO bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt_GT' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt_gt.v:71]
+	Parameter GT_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter RX_DFE_KL_CFG2_IN bound to: 806439084 - type: integer 
+	Parameter SIM_CPLLREFCLK_SEL bound to: 3'b001 
+	Parameter PMA_RSV_IN bound to: 99456 - type: integer 
+	Parameter PCS_RSVD_ATTR_IN bound to: 48'b000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'GTXE2_CHANNEL' [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:10644]
+	Parameter ALIGN_COMMA_DOUBLE bound to: FALSE - type: string 
+	Parameter ALIGN_COMMA_ENABLE bound to: 10'b1111111111 
+	Parameter ALIGN_COMMA_WORD bound to: 1 - type: integer 
+	Parameter ALIGN_MCOMMA_DET bound to: TRUE - type: string 
+	Parameter ALIGN_MCOMMA_VALUE bound to: 10'b1010000011 
+	Parameter ALIGN_PCOMMA_DET bound to: TRUE - type: string 
+	Parameter ALIGN_PCOMMA_VALUE bound to: 10'b0101111100 
+	Parameter CBCC_DATA_SOURCE_SEL bound to: DECODED - type: string 
+	Parameter CHAN_BOND_KEEP_ALIGN bound to: FALSE - type: string 
+	Parameter CHAN_BOND_MAX_SKEW bound to: 1 - type: integer 
+	Parameter CHAN_BOND_SEQ_1_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CHAN_BOND_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CLK_CORRECT_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_KEEP_IDLE bound to: FALSE - type: string 
+	Parameter CLK_COR_MAX_LAT bound to: 12 - type: integer 
+	Parameter CLK_COR_MIN_LAT bound to: 8 - type: integer 
+	Parameter CLK_COR_PRECEDENCE bound to: TRUE - type: string 
+	Parameter CLK_COR_REPEAT_WAIT bound to: 0 - type: integer 
+	Parameter CLK_COR_SEQ_1_1 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_1 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CPLL_CFG bound to: 24'b101111000000011111011100 
+	Parameter CPLL_FBDIV bound to: 4 - type: integer 
+	Parameter CPLL_FBDIV_45 bound to: 5 - type: integer 
+	Parameter CPLL_INIT_CFG bound to: 24'b000000000000000000011110 
+	Parameter CPLL_LOCK_CFG bound to: 16'b0000000111101000 
+	Parameter CPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter DEC_MCOMMA_DETECT bound to: TRUE - type: string 
+	Parameter DEC_PCOMMA_DETECT bound to: TRUE - type: string 
+	Parameter DEC_VALID_COMMA_ONLY bound to: FALSE - type: string 
+	Parameter DMONITOR_CFG bound to: 24'b000000000000101000000000 
+	Parameter ES_CONTROL bound to: 6'b000000 
+	Parameter ES_ERRDET_EN bound to: FALSE - type: string 
+	Parameter ES_EYE_SCAN_EN bound to: TRUE - type: string 
+	Parameter ES_HORZ_OFFSET bound to: 12'b000000000000 
+	Parameter ES_PMA_CFG bound to: 10'b0000000000 
+	Parameter ES_PRESCALE bound to: 5'b00000 
+	Parameter ES_QUALIFIER bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_QUAL_MASK bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_SDATA_MASK bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_VERT_OFFSET bound to: 9'b000000000 
+	Parameter FTS_DESKEW_SEQ_ENABLE bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_CFG bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_EN bound to: FALSE - type: string 
+	Parameter GEARBOX_MODE bound to: 3'b000 
+	Parameter IS_CPLLLOCKDETCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DRPCLK_INVERTED bound to: 1'b0 
+	Parameter IS_GTGREFCLK_INVERTED bound to: 1'b0 
+	Parameter IS_RXUSRCLK2_INVERTED bound to: 1'b0 
+	Parameter IS_RXUSRCLK_INVERTED bound to: 1'b0 
+	Parameter IS_TXPHDLYTSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_TXUSRCLK2_INVERTED bound to: 1'b0 
+	Parameter IS_TXUSRCLK_INVERTED bound to: 1'b0 
+	Parameter OUTREFCLK_SEL_INV bound to: 2'b11 
+	Parameter PCS_PCIE_EN bound to: FALSE - type: string 
+	Parameter PCS_RSVD_ATTR bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PD_TRANS_TIME_FROM_P2 bound to: 12'b000000111100 
+	Parameter PD_TRANS_TIME_NONE_P2 bound to: 8'b00111100 
+	Parameter PD_TRANS_TIME_TO_P2 bound to: 8'b01100100 
+	Parameter PMA_RSV bound to: 99456 - type: integer 
+	Parameter PMA_RSV2 bound to: 16'b0010000001010000 
+	Parameter PMA_RSV3 bound to: 2'b00 
+	Parameter PMA_RSV4 bound to: 0 - type: integer 
+	Parameter RXBUFRESET_TIME bound to: 5'b00001 
+	Parameter RXBUF_ADDR_MODE bound to: FAST - type: string 
+	Parameter RXBUF_EIDLE_HI_CNT bound to: 4'b1000 
+	Parameter RXBUF_EIDLE_LO_CNT bound to: 4'b0000 
+	Parameter RXBUF_EN bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_CB_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_COMMAALIGN bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_EIDLE bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_THRESH_OVFLW bound to: 57 - type: integer 
+	Parameter RXBUF_THRESH_OVRD bound to: TRUE - type: string 
+	Parameter RXBUF_THRESH_UNDFLW bound to: 3 - type: integer 
+	Parameter RXCDRFREQRESET_TIME bound to: 5'b00001 
+	Parameter RXCDRPHRESET_TIME bound to: 5'b00001 
+	Parameter RXCDR_CFG bound to: 72'b000000110000000000000000001000111111111100010000010000000000000000100000 
+	Parameter RXCDR_FR_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXCDR_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RXCDR_LOCK_CFG bound to: 6'b010101 
+	Parameter RXCDR_PH_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXDFELPMRESET_TIME bound to: 7'b0001111 
+	Parameter RXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter RXDLY_LCFG bound to: 9'b000110000 
+	Parameter RXDLY_TAP_CFG bound to: 16'b0000000000000000 
+	Parameter RXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter RXISCANRESET_TIME bound to: 5'b00001 
+	Parameter RXLPM_HF_CFG bound to: 14'b00000011110000 
+	Parameter RXLPM_LF_CFG bound to: 14'b00000011110000 
+	Parameter RXOOB_CFG bound to: 7'b0000110 
+	Parameter RXOUT_DIV bound to: 1 - type: integer 
+	Parameter RXPCSRESET_TIME bound to: 5'b00001 
+	Parameter RXPHDLY_CFG bound to: 24'b000010000100000000100000 
+	Parameter RXPH_CFG bound to: 24'b000000000000000000000000 
+	Parameter RXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter RXPMARESET_TIME bound to: 5'b00011 
+	Parameter RXPRBS_ERR_LOOPBACK bound to: 1'b0 
+	Parameter RXSLIDE_AUTO_WAIT bound to: 7 - type: integer 
+	Parameter RXSLIDE_MODE bound to: OFF - type: string 
+	Parameter RX_BIAS_CFG bound to: 12'b000000000100 
+	Parameter RX_BUFFER_CFG bound to: 6'b000000 
+	Parameter RX_CLK25_DIV bound to: 5 - type: integer 
+	Parameter RX_CLKMUX_PD bound to: 1'b1 
+	Parameter RX_CM_SEL bound to: 2'b11 
+	Parameter RX_CM_TRIM bound to: 3'b010 
+	Parameter RX_DATA_WIDTH bound to: 40 - type: integer 
+	Parameter RX_DDI_SEL bound to: 6'b000000 
+	Parameter RX_DEBUG_CFG bound to: 12'b000000000000 
+	Parameter RX_DEFER_RESET_BUF_EN bound to: TRUE - type: string 
+	Parameter RX_DFE_GAIN_CFG bound to: 23'b00000100000111111101010 
+	Parameter RX_DFE_H2_CFG bound to: 12'b000000000000 
+	Parameter RX_DFE_H3_CFG bound to: 12'b000001000000 
+	Parameter RX_DFE_H4_CFG bound to: 11'b00011110000 
+	Parameter RX_DFE_H5_CFG bound to: 11'b00011100000 
+	Parameter RX_DFE_KL_CFG bound to: 13'b0000011111110 
+	Parameter RX_DFE_KL_CFG2 bound to: 806439084 - type: integer 
+	Parameter RX_DFE_LPM_CFG bound to: 16'b0000100100000100 
+	Parameter RX_DFE_LPM_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RX_DFE_UT_CFG bound to: 17'b10001111000000000 
+	Parameter RX_DFE_VP_CFG bound to: 17'b00011111100000011 
+	Parameter RX_DFE_XYD_CFG bound to: 13'b0000000000000 
+	Parameter RX_DISPERR_SEQ_MATCH bound to: TRUE - type: string 
+	Parameter RX_INT_DATAWIDTH bound to: 1 - type: integer 
+	Parameter RX_OS_CFG bound to: 13'b0000010000000 
+	Parameter RX_SIG_VALID_DLY bound to: 10 - type: integer 
+	Parameter RX_XCLK_SEL bound to: RXREC - type: string 
+	Parameter SAS_MAX_COM bound to: 64 - type: integer 
+	Parameter SAS_MIN_COM bound to: 36 - type: integer 
+	Parameter SATA_BURST_SEQ_LEN bound to: 4'b0101 
+	Parameter SATA_BURST_VAL bound to: 3'b111 
+	Parameter SATA_CPLL_CFG bound to: VCO_3000MHZ - type: string 
+	Parameter SATA_EIDLE_VAL bound to: 3'b111 
+	Parameter SATA_MAX_BURST bound to: 8 - type: integer 
+	Parameter SATA_MAX_INIT bound to: 21 - type: integer 
+	Parameter SATA_MAX_WAKE bound to: 7 - type: integer 
+	Parameter SATA_MIN_BURST bound to: 4 - type: integer 
+	Parameter SATA_MIN_INIT bound to: 12 - type: integer 
+	Parameter SATA_MIN_WAKE bound to: 4 - type: integer 
+	Parameter SHOW_REALIGN_COMMA bound to: TRUE - type: string 
+	Parameter SIM_CPLLREFCLK_SEL bound to: 3'b001 
+	Parameter SIM_RECEIVER_DETECT_PASS bound to: TRUE - type: string 
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_TX_EIDLE_DRIVE_LEVEL bound to: X - type: string 
+	Parameter SIM_VERSION bound to: 4.0 - type: string 
+	Parameter TERM_RCAL_CFG bound to: 5'b10000 
+	Parameter TERM_RCAL_OVRD bound to: 1'b0 
+	Parameter TRANS_TIME_RATE bound to: 8'b00001110 
+	Parameter TST_RSV bound to: 0 - type: integer 
+	Parameter TXBUF_EN bound to: TRUE - type: string 
+	Parameter TXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter TXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter TXDLY_LCFG bound to: 9'b000110000 
+	Parameter TXDLY_TAP_CFG bound to: 16'b0000000000000000 
+	Parameter TXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter TXOUT_DIV bound to: 1 - type: integer 
+	Parameter TXPCSRESET_TIME bound to: 5'b00001 
+	Parameter TXPHDLY_CFG bound to: 24'b000010000100000000100000 
+	Parameter TXPH_CFG bound to: 16'b0000011110000000 
+	Parameter TXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter TXPMARESET_TIME bound to: 5'b00001 
+	Parameter TX_CLK25_DIV bound to: 5 - type: integer 
+	Parameter TX_CLKMUX_PD bound to: 1'b1 
+	Parameter TX_DATA_WIDTH bound to: 40 - type: integer 
+	Parameter TX_DEEMPH0 bound to: 5'b00000 
+	Parameter TX_DEEMPH1 bound to: 5'b00000 
+	Parameter TX_DRIVE_MODE bound to: DIRECT - type: string 
+	Parameter TX_EIDLE_ASSERT_DELAY bound to: 3'b110 
+	Parameter TX_EIDLE_DEASSERT_DELAY bound to: 3'b100 
+	Parameter TX_INT_DATAWIDTH bound to: 1 - type: integer 
+	Parameter TX_LOOPBACK_DRIVE_HIZ bound to: FALSE - type: string 
+	Parameter TX_MAINCURSOR_SEL bound to: 1'b0 
+	Parameter TX_MARGIN_FULL_0 bound to: 7'b1001110 
+	Parameter TX_MARGIN_FULL_1 bound to: 7'b1001001 
+	Parameter TX_MARGIN_FULL_2 bound to: 7'b1000101 
+	Parameter TX_MARGIN_FULL_3 bound to: 7'b1000010 
+	Parameter TX_MARGIN_FULL_4 bound to: 7'b1000000 
+	Parameter TX_MARGIN_LOW_0 bound to: 7'b1000110 
+	Parameter TX_MARGIN_LOW_1 bound to: 7'b1000100 
+	Parameter TX_MARGIN_LOW_2 bound to: 7'b1000010 
+	Parameter TX_MARGIN_LOW_3 bound to: 7'b1000000 
+	Parameter TX_MARGIN_LOW_4 bound to: 7'b1000000 
+	Parameter TX_PREDRIVER_MODE bound to: 1'b0 
+	Parameter TX_QPI_STATUS_EN bound to: 1'b0 
+	Parameter TX_RXDETECT_CFG bound to: 14'b01100000110010 
+	Parameter TX_RXDETECT_REF bound to: 3'b100 
+	Parameter TX_XCLK_SEL bound to: TXOUT - type: string 
+	Parameter UCODEER_CLR bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'GTXE2_CHANNEL' (36#1) [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:10644]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt_GT' (37#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt_gt.v:71]
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt_cpll_railing' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt_cpll_railing.v:68]
+	Parameter USE_BUFG bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'BUFH' [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:808]
+INFO: [Synth 8-6155] done synthesizing module 'BUFH' (38#1) [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:808]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt_cpll_railing' (39#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt_cpll_railing.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt_multi_gt' (40#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt_multi_gt.v:70]
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt_TX_STARTUP_FSM' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_tx_startup_fsm.v:94]
+	Parameter STABLE_CLOCK_PERIOD bound to: 10 - type: integer 
+	Parameter RETRY_COUNTER_BITWIDTH bound to: 8 - type: integer 
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+	Parameter TX_QPLL_USED bound to: FALSE - type: string 
+	Parameter RX_QPLL_USED bound to: FALSE - type: string 
+	Parameter PHASE_ALIGNMENT_MANUAL bound to: FALSE - type: string 
+	Parameter INIT bound to: 4'b0000 
+	Parameter ASSERT_ALL_RESETS bound to: 4'b0001 
+	Parameter WAIT_FOR_PLL_LOCK bound to: 4'b0010 
+	Parameter RELEASE_PLL_RESET bound to: 4'b0011 
+	Parameter WAIT_FOR_TXOUTCLK bound to: 4'b0100 
+	Parameter RELEASE_MMCM_RESET bound to: 4'b0101 
+	Parameter WAIT_FOR_TXUSRCLK bound to: 4'b0110 
+	Parameter WAIT_RESET_DONE bound to: 4'b0111 
+	Parameter DO_PHASE_ALIGNMENT bound to: 4'b1000 
+	Parameter RESET_FSM_DONE bound to: 4'b1001 
+	Parameter MMCM_LOCK_CNT_MAX bound to: 256 - type: integer 
+	Parameter STARTUP_DELAY bound to: 500 - type: integer 
+	Parameter WAIT_CYCLES bound to: 50 - type: integer 
+	Parameter WAIT_MAX bound to: 60 - type: integer 
+	Parameter WAIT_TIMEOUT_2ms bound to: 200000 - type: integer 
+	Parameter WAIT_TLOCK_MAX bound to: 10000 - type: integer 
+	Parameter WAIT_TIMEOUT_500us bound to: 50000 - type: integer 
+	Parameter WAIT_1us_CYCLES bound to: 100 - type: integer 
+	Parameter WAIT_1us bound to: 110 - type: integer 
+	Parameter WAIT_TIME_MAX bound to: 1000 - type: integer 
+	Parameter PORT_WIDTH bound to: 18 - type: integer 
+	Parameter MAX_RETRIES bound to: 255 - type: integer 
+	Parameter MAX_WAIT_BYPASS bound to: 91648 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt_sync_block' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_sync_block.v:78]
+	Parameter INITIALISE bound to: 6'b000000 
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt_sync_block' (41#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_sync_block.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt_TX_STARTUP_FSM' (42#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_tx_startup_fsm.v:94]
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt_RX_STARTUP_FSM' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_rx_startup_fsm.v:94]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+	Parameter EQ_MODE bound to: LPM - type: string 
+	Parameter STABLE_CLOCK_PERIOD bound to: 10 - type: integer 
+	Parameter RETRY_COUNTER_BITWIDTH bound to: 8 - type: integer 
+	Parameter TX_QPLL_USED bound to: FALSE - type: string 
+	Parameter RX_QPLL_USED bound to: FALSE - type: string 
+	Parameter PHASE_ALIGNMENT_MANUAL bound to: FALSE - type: string 
+	Parameter INIT bound to: 4'b0000 
+	Parameter ASSERT_ALL_RESETS bound to: 4'b0001 
+	Parameter WAIT_FOR_PLL_LOCK bound to: 4'b0010 
+	Parameter RELEASE_PLL_RESET bound to: 4'b0011 
+	Parameter VERIFY_RECCLK_STABLE bound to: 4'b0100 
+	Parameter RELEASE_MMCM_RESET bound to: 4'b0101 
+	Parameter WAIT_FOR_RXUSRCLK bound to: 4'b0110 
+	Parameter WAIT_RESET_DONE bound to: 4'b0111 
+	Parameter DO_PHASE_ALIGNMENT bound to: 4'b1000 
+	Parameter MONITOR_DATA_VALID bound to: 4'b1001 
+	Parameter FSM_DONE bound to: 4'b1010 
+	Parameter MMCM_LOCK_CNT_MAX bound to: 256 - type: integer 
+	Parameter STARTUP_DELAY bound to: 500 - type: integer 
+	Parameter WAIT_CYCLES bound to: 50 - type: integer 
+	Parameter WAIT_MAX bound to: 60 - type: integer 
+	Parameter WAIT_TIMEOUT_2ms bound to: 200000 - type: integer 
+	Parameter WAIT_TLOCK_MAX bound to: 10000 - type: integer 
+	Parameter WAIT_TIMEOUT_500us bound to: 50000 - type: integer 
+	Parameter WAIT_TIMEOUT_1us bound to: 100 - type: integer 
+	Parameter WAIT_TIMEOUT_100us bound to: 10000 - type: integer 
+	Parameter WAIT_TIME_ADAPT bound to: 740000 - type: integer 
+	Parameter WAIT_TIME_MAX bound to: 1000 - type: integer 
+	Parameter PORT_WIDTH bound to: 18 - type: integer 
+	Parameter MAX_RETRIES bound to: 255 - type: integer 
+	Parameter MAX_WAIT_BYPASS bound to: 5000 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element time_out_500us_reg was removed.  [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_rx_startup_fsm.v:354]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt_RX_STARTUP_FSM' (43#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_rx_startup_fsm.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt_init' (44#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt_init.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt' (45#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt.v:73]
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_phy_sync_block__parameterized0' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy_sync_block.v:77]
+	Parameter INITIALISE bound to: 1'b0 
+	Parameter TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized0' [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized0' (45#1) [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_phy_sync_block__parameterized0' (45#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy_sync_block.v:77]
+INFO: [Synth 8-4471] merging register 'tx_pll_lock_i_reg' into 'rx_pll_lock_i_reg' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy_block.v:664]
+WARNING: [Synth 8-6014] Unused sequential element tx_pll_lock_i_reg was removed.  [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy_block.v:664]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_phy_block' (46#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy_block.v:54]
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt_common_wrapper' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy_gt_common_wrapper.v:56]
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_jesd204_0_0_phy_gtwizard_0_common' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy_gtwizard_0_common.v:69]
+	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter QPLL_FBDIV_TOP bound to: 40 - type: integer 
+	Parameter QPLL_FBDIV_IN bound to: 10'b0010000000 
+	Parameter QPLL_FBDIV_RATIO bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'GTXE2_COMMON' [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:11317]
+	Parameter BIAS_CFG bound to: 64'b0000000000000000000001000000000000000000000000000001000000000000 
+	Parameter COMMON_CFG bound to: 0 - type: integer 
+	Parameter IS_DRPCLK_INVERTED bound to: 1'b0 
+	Parameter IS_GTGREFCLK_INVERTED bound to: 1'b0 
+	Parameter IS_QPLLLOCKDETCLK_INVERTED bound to: 1'b0 
+	Parameter QPLL_CFG bound to: 27'b000011010000000000111000001 
+	Parameter QPLL_CLKOUT_CFG bound to: 4'b0000 
+	Parameter QPLL_COARSE_FREQ_OVRD bound to: 6'b010000 
+	Parameter QPLL_COARSE_FREQ_OVRD_EN bound to: 1'b0 
+	Parameter QPLL_CP bound to: 10'b0000011111 
+	Parameter QPLL_CP_MONITOR_EN bound to: 1'b0 
+	Parameter QPLL_DMONITOR_SEL bound to: 1'b0 
+	Parameter QPLL_FBDIV bound to: 10'b0010000000 
+	Parameter QPLL_FBDIV_MONITOR_EN bound to: 1'b0 
+	Parameter QPLL_FBDIV_RATIO bound to: 1'b1 
+	Parameter QPLL_INIT_CFG bound to: 24'b000000000000000000000110 
+	Parameter QPLL_LOCK_CFG bound to: 16'b0010000111101000 
+	Parameter QPLL_LPF bound to: 4'b1111 
+	Parameter QPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter SIM_QPLLREFCLK_SEL bound to: 3'b001 
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_VERSION bound to: 4.0 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'GTXE2_COMMON' (47#1) [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:11317]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_phy_gtwizard_0_common' (48#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy_gtwizard_0_common.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_phy_gt_common_wrapper' (49#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy_gt_common_wrapper.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_phy_support' (50#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy_support.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_phy' (51#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0_support' (52#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_support.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_jesd204_0_0' (53#1) [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0.v:55]
+WARNING: [Synth 8-3331] design xpm_cdc_single__parameterized0 has unconnected port src_clk
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_phy_gt_RX_STARTUP_FSM has unconnected port RXSYSCLKSEL[1]
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_phy_gt_RX_STARTUP_FSM has unconnected port TXSYSCLKSEL[1]
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_phy_gt_TX_STARTUP_FSM has unconnected port TXSYSCLKSEL[1]
+WARNING: [Synth 8-3331] design xpm_cdc_single has unconnected port src_clk
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_register_decode has unconnected port bus2ip_addr[1]
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_register_decode has unconnected port bus2ip_addr[0]
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_address_decoder has unconnected port Address_In_Erly[0]
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_address_decoder has unconnected port Address_In_Erly[1]
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_address_decoder has unconnected port Address_In_Erly[2]
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_address_decoder has unconnected port Address_In_Erly[3]
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_address_decoder has unconnected port Address_In_Erly[4]
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_address_decoder has unconnected port Address_In_Erly[5]
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_address_decoder has unconnected port Address_In_Erly[6]
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_address_decoder has unconnected port Address_In_Erly[7]
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_address_decoder has unconnected port Address_In_Erly[8]
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_address_decoder has unconnected port Address_In_Erly[9]
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_address_decoder has unconnected port Address_In_Erly[10]
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_address_decoder has unconnected port Address_In_Erly[11]
+WARNING: [Synth 8-3331] design axi_spi_top_jesd204_0_0_address_decoder has unconnected port Bus_RNW
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_r_us[7]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_r_us[6]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_r_us[5]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_r_us[4]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_r_us[3]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_r_us[2]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_r_us[1]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_r_us[0]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_a_us[7]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_a_us[6]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_a_us[5]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_a_us[4]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_a_us[3]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_a_us[2]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_a_us[1]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_a_us[0]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_q_us[7]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_q_us[6]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_q_us[5]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_ila_align_32 has unconnected port is_q_us[4]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_mem_dist_32 has unconnected port rst
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_descram_32 has unconnected port rst
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_data_swap_32 has unconnected port rst
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_align_32 has unconnected port data_us[7]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_align_32 has unconnected port data_us[6]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_align_32 has unconnected port data_us[5]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_align_32 has unconnected port data_us[4]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_align_32 has unconnected port data_us[3]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_align_32 has unconnected port data_us[2]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_align_32 has unconnected port data_us[1]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_align_32 has unconnected port data_us[0]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_align_32 has unconnected port is_r_us[0]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_align_32 has unconnected port is_a_us[0]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_align_32 has unconnected port is_q_us[0]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_align_32 has unconnected port is_f_us[0]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_align_32 has unconnected port is_e_us[0]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_lane_32 has unconnected port meta_eof[3]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_lane_32 has unconnected port meta_eof[2]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_lane_32 has unconnected port meta_eof[1]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_lane_32 has unconnected port meta_eof[0]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_rx_align_out_32 has unconnected port rst
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port multi_frames[7]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port multi_frames[6]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port multi_frames[5]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port multi_frames[4]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port multi_frames[3]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port multi_frames[2]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port multi_frames[1]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port multi_frames[0]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_f[7]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_f[6]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_f[5]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_f[4]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_f[3]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_f[2]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_f[1]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_f[0]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_k[4]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_k[3]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_k[2]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_k[1]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_k[0]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_scr
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_did[7]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_did[6]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_did[5]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_did[4]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_did[3]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_did[2]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_did[1]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_did[0]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_bid[3]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_bid[2]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_bid[1]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_bid[0]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_m[7]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_m[6]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_m[5]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_m[4]
+WARNING: [Synth 8-3331] design jesd204_v7_2_2_top has unconnected port tx_cfg_m[3]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 523.465 ; gain = 202.797
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 523.465 ; gain = 202.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 523.465 ; gain = 202.797
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 100 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt.xdc] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/axi_spi_top_jesd204_0_0_phy_gt/inst'
+Finished Parsing XDC File [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt.xdc] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/axi_spi_top_jesd204_0_0_phy_gt/inst'
+Parsing XDC File [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy.xdc] for cell 'inst/i_jesd204_phy/inst'
+Finished Parsing XDC File [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy.xdc] for cell 'inst/i_jesd204_phy/inst'
+Parsing XDC File [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0.xdc] for cell 'inst'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0.xdc:78]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0.xdc:80]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0.xdc:82]
+Finished Parsing XDC File [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_spi_top_jesd204_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/axi_spi_top_jesd204_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/axi_spi_top_jesd204_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_jesd204_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_jesd204_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_jesd204_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/axi_spi_top_jesd204_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/axi_spi_top_jesd204_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy_clocks.xdc] for cell 'inst/i_jesd204_phy/inst'
+Finished Parsing XDC File [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/synth/axi_spi_top_jesd204_0_0_phy_clocks.xdc] for cell 'inst/i_jesd204_phy/inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_reset_all/xpm_cdc_async_rst_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_reset_all/xpm_cdc_async_rst_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_reset_data/xpm_cdc_async_rst_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_reset_data/xpm_cdc_async_rst_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_reset_all/xpm_cdc_async_rst_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_reset_all/xpm_cdc_async_rst_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_reset_data/xpm_cdc_async_rst_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_reset_data/xpm_cdc_async_rst_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/jesd204_block_i/i_axi_spi_top_jesd204_0_0_reset_block/sync_core_rst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/jesd204_block_i/i_axi_spi_top_jesd204_0_0_reset_block/sync_core_rst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/axi_spi_top_jesd204_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/axi_spi_top_jesd204_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/i_axi_spi_top_jesd204_0_0_reset_block/sync_gt_resetdone'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/i_axi_spi_top_jesd204_0_0_reset_block/sync_gt_resetdone'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rx_sync'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rx_sync'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rx_sysref_captured'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rx_sysref_captured'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rxstatus2_ack'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rxstatus2_ack'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rxstatus2_read'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rxstatus2_read'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rxstatus_ack'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rxstatus_ack'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rxstatus_read'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rxstatus_read'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_chan_rst_done/cdc_i'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_chan_rst_done/cdc_i'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_pll_lock/cdc_i'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_pll_lock/cdc_i'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_chan_rst_done/cdc_i'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_chan_rst_done/cdc_i'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_pll_lock/cdc_i'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_pll_lock/cdc_i'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/axi_spi_top_jesd204_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/axi_spi_top_jesd204_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 98 instances were transformed.
+  FD => FDRE: 98 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 924.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 924.273 ; gain = 603.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 924.273 ; gain = 603.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/i_jesd204_phy. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/i_jesd204_phy/inst/jesd204_phy_block_i/axi_spi_top_jesd204_0_0_phy_gt. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_jesd204_0_0_synth_1/dont_touch.xdc, line 15).
+Applied set_property DONT_TOUCH = true for inst/i_jesd204_phy/inst/jesd204_phy_block_i/axi_spi_top_jesd204_0_0_phy_gt/inst. (constraint file  D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_jesd204_0_0_synth_1/dont_touch.xdc, line 22).
+Applied set_property DONT_TOUCH = true for inst/i_jesd204_phy/inst. (constraint file  D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_jesd204_0_0_synth_1/dont_touch.xdc, line 29).
+Applied set_property DONT_TOUCH = true for inst/jesd204_block_i/i_axi_spi_top_jesd204_0_0_reset_block/sync_core_rst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_reset_data/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_reset_data/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_reset_all/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_reset_all/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/jesd204_block_i/i_axi_spi_top_jesd204_0_0_reset_block/sync_gt_resetdone. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/jesd204_block_i/sync_rx_sync. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/jesd204_block_i/sync_rx_sysref_captured. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/jesd204_block_i/sync_rxstatus2_ack. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/jesd204_block_i/sync_rxstatus2_read. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/jesd204_block_i/sync_rxstatus_ack. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/jesd204_block_i/sync_rxstatus_read. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_pll_lock/cdc_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_pll_lock/cdc_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_chan_rst_done/cdc_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_chan_rst_done/cdc_i. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 924.273 ; gain = 603.605
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "sof_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sof_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sfcnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eof_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "stall" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "eof_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eof_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "efcnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'jesd204_v7_2_2_cgs_state_32'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cfg_did" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cfg_f" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cfg_np" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cfg_res2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ila_test" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "k285_test" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ila_test" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "k285_test" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_ipif/axi_spi_top_jesd204_0_0_counter_f.v:99]
+INFO: [Synth 8-802] inferred FSM for state register 'access_cs_reg' in module 'axi_spi_top_jesd204_0_0_slave_attachment'
+INFO: [Synth 8-5544] ROM "p_555_in" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "error_add" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "reset_wd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'axi_spi_top_jesd204_0_0_phy_gt_TX_STARTUP_FSM'
+INFO: [Synth 8-5546] ROM "init_wait_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "init_wait_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_2ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_tlock_max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_500us" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wait_bypass_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_wait_bypass" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "TXUSERRDY" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gttxreset_i" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MMCM_RESET" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_fsm_reset_done_int" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reset_time_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "run_phase_alignment_int" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'RXDFELFHOLD_reg' into 'RXDFEAGCHOLD_reg' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_rx_startup_fsm.v:562]
+INFO: [Synth 8-4471] merging register 'RXLPMLFHOLD_reg' into 'RXDFEAGCHOLD_reg' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_rx_startup_fsm.v:563]
+INFO: [Synth 8-4471] merging register 'RXLPMHFHOLD_reg' into 'RXDFEAGCHOLD_reg' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_rx_startup_fsm.v:564]
+INFO: [Synth 8-4471] merging register 'recclk_mon_count_reset_reg' into 'adapt_count_reset_reg' [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_rx_startup_fsm.v:559]
+WARNING: [Synth 8-6014] Unused sequential element recclk_mon_count_reset_reg was removed.  [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_rx_startup_fsm.v:559]
+WARNING: [Synth 8-6014] Unused sequential element RXDFELFHOLD_reg was removed.  [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_rx_startup_fsm.v:562]
+WARNING: [Synth 8-6014] Unused sequential element RXLPMLFHOLD_reg was removed.  [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_rx_startup_fsm.v:563]
+WARNING: [Synth 8-6014] Unused sequential element RXLPMHFHOLD_reg was removed.  [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_rx_startup_fsm.v:564]
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'axi_spi_top_jesd204_0_0_phy_gt_RX_STARTUP_FSM'
+INFO: [Synth 8-5545] ROM "adapt_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "time_out_adapt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "init_wait_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "init_wait_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_2ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_1us" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_100us" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wait_bypass_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_wait_bypass" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "retry_counter_int" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gtrxreset_i" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mmcm_reset_i" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "run_phase_alignment_int" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "gt0_rx_cdrlocked" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gt0_rx_cdrlock_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gt1_rx_cdrlocked" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gt1_rx_cdrlock_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     sxx |                             0000 |                             0000
+                     s30 |                             0001 |                             0001
+                     s31 |                             0010 |                             0010
+                     s02 |                             0011 |                             1011
+                     s13 |                             0100 |                             1001
+                     s01 |                             0101 |                             1010
+                     s12 |                             0110 |                             1000
+                     s23 |                             0111 |                             0110
+                     s11 |                             1000 |                             0111
+                     s22 |                             1001 |                             0101
+                     s33 |                             1010 |                             1101
+                     s21 |                             1011 |                             0100
+                     s32 |                             1100 |                             0011
+                     s03 |                             1101 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'jesd204_v7_2_2_cgs_state_32'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                 READING |                              001 |                              001
+               READ_WAIT |                              010 |                              010
+              WRITE_WAIT |                              011 |                              011
+                 WRITING |                              100 |                              100
+                 B_VALID |                              101 |                              101
+              BRESP_WAIT |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'access_cs_reg' using encoding 'sequential' in module 'axi_spi_top_jesd204_0_0_slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                             0000 |                             0000
+       ASSERT_ALL_RESETS |                             0001 |                             0001
+       WAIT_FOR_PLL_LOCK |                             0010 |                             0010
+       RELEASE_PLL_RESET |                             0011 |                             0011
+       WAIT_FOR_TXOUTCLK |                             0100 |                             0100
+      RELEASE_MMCM_RESET |                             0101 |                             0101
+       WAIT_FOR_TXUSRCLK |                             0110 |                             0110
+         WAIT_RESET_DONE |                             0111 |                             0111
+      DO_PHASE_ALIGNMENT |                             1000 |                             1000
+          RESET_FSM_DONE |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_state_reg' using encoding 'sequential' in module 'axi_spi_top_jesd204_0_0_phy_gt_TX_STARTUP_FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                             0000 |                             0000
+       ASSERT_ALL_RESETS |                             0001 |                             0001
+       WAIT_FOR_PLL_LOCK |                             0010 |                             0010
+       RELEASE_PLL_RESET |                             0011 |                             0011
+    VERIFY_RECCLK_STABLE |                             0100 |                             0100
+      RELEASE_MMCM_RESET |                             0101 |                             0101
+       WAIT_FOR_RXUSRCLK |                             0110 |                             0110
+         WAIT_RESET_DONE |                             0111 |                             0111
+      DO_PHASE_ALIGNMENT |                             1000 |                             1000
+      MONITOR_DATA_VALID |                             1001 |                             1001
+                FSM_DONE |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'axi_spi_top_jesd204_0_0_phy_gt_RX_STARTUP_FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 924.273 ; gain = 603.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------------------------+------------+----------+
+|      |RTL Partition                                |Replication |Instances |
++------+---------------------------------------------+------------+----------+
+|1     |muxpart__48                                  |           1|     36864|
+|2     |axi_spi_top_jesd204_0_0_register_decode__GB1 |           1|       326|
+|3     |axi_spi_top_jesd204_0_0_block__GC0           |           1|     11825|
+|4     |axi_spi_top_jesd204_0_0_clocking__GC0        |           1|         2|
+|5     |axi_spi_top_jesd204_0_0_phy                  |           1|      4518|
++------+---------------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element i_axi_lite_ipif/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].cs_out_i_reg was removed.  [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/synth/axi_ipif/axi_spi_top_jesd204_0_0_address_decoder.v:203]
+INFO: [Synth 8-5546] ROM "i_axi_spi_top_jesd204_0_0_reset_block/reset_wd" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element gt_txresetfsm_i/MMCM_RESET_reg was removed.  [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_tx_startup_fsm.v:411]
+WARNING: [Synth 8-6014] Unused sequential element gt_txresetfsm_i/QPLL_RESET_reg was removed.  [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_tx_startup_fsm.v:413]
+WARNING: [Synth 8-6014] Unused sequential element gt_txresetfsm_i/RESET_PHALIGNMENT_reg was removed.  [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_tx_startup_fsm.v:419]
+WARNING: [Synth 8-6014] Unused sequential element gt_txresetfsm_i/retry_counter_int_reg was removed.  [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_tx_startup_fsm.v:214]
+WARNING: [Synth 8-6014] Unused sequential element gt_rxresetfsm_i/mmcm_reset_i_reg was removed.  [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_rx_startup_fsm.v:278]
+WARNING: [Synth 8-6014] Unused sequential element gt_rxresetfsm_i/QPLL_RESET_reg was removed.  [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_rx_startup_fsm.v:551]
+WARNING: [Synth 8-6014] Unused sequential element gt_rxresetfsm_i/RESET_PHALIGNMENT_reg was removed.  [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_rx_startup_fsm.v:558]
+WARNING: [Synth 8-6014] Unused sequential element gt_rxresetfsm_i/retry_counter_int_reg was removed.  [d:/Vivado2018_wrk/axi_spi/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_jesd204_0_0/ip_0/ip_0/axi_spi_top_jesd204_0_0_phy_gt/example_design/axi_spi_top_jesd204_0_0_phy_gt_rx_startup_fsm.v:274]
+INFO: [Synth 8-5546] ROM "gt_txresetfsm_i/init_wait_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt_txresetfsm_i/init_wait_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt_txresetfsm_i/time_out_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt_txresetfsm_i/time_out_2ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt_txresetfsm_i/time_tlock_max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt_txresetfsm_i/time_out_500us" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt_txresetfsm_i/wait_bypass_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt_txresetfsm_i/time_out_wait_bypass" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt_rxresetfsm_i/init_wait_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt_rxresetfsm_i/init_wait_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt_rxresetfsm_i/time_out_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt_rxresetfsm_i/time_out_2ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt_rxresetfsm_i/time_out_100us" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt_rxresetfsm_i/time_out_1us" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "gt_rxresetfsm_i/adapt_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gt_rxresetfsm_i/time_out_adapt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "gt_rxresetfsm_i/wait_bypass_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt_rxresetfsm_i/time_out_wait_bypass" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "gt1_rx_cdrlock_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gt1_rx_cdrlocked" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gt0_rx_cdrlock_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gt0_rx_cdrlocked" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[61]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[61]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[53]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[53]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[45]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[5]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[37]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[45]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[5]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[37]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[56]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[62]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[54]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[46]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[6]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[48]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[40]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[0]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[32]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[56]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[62]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[54]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[46]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[6]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[48]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[40]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[0]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[32]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[57]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[63]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[55]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[47]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[7]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[49]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[41]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[1]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[33]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[57]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[63]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[55]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[47]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[7]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[49]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[41]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[1]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[33]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[58]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[50]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[42]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[2]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[34]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[58]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[50]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[42]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[2]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[34]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[59]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[51]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[43]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[3]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[35]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[59]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[51]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[43]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[3]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[35]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[60]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[52]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[44]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[4]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[36]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[60]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[52]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[44]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[4]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[36]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/is_e_ds_reg[0]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/inv_ds_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/inv_ds_reg[1]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/is_e_ds_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/inv_ds_reg[2]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/is_e_ds_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/inv_ds_reg[3]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/is_e_ds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/is_e_ds_reg[0]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/inv_ds_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/inv_ds_reg[1]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/is_e_ds_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/inv_ds_reg[2]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/is_e_ds_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/inv_ds_reg[3]' (FD) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/is_e_ds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[6]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[7]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[8]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[8] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[9]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[9] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[10]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[10] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[11]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[11] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[12]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[12] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[13]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[13] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[14]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[14] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[15]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[15] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[16]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[16] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[17]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[18]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[17] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[18]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[18] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[19]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[20]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[19] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[20]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[21]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[20] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[21]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[22]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[21] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[22]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[22] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[23]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[24]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[23] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[24]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[25]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[24] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[25]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[26]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[25] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[26]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[26] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[27]' (FDE) to 'inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/rx_32_c/stat_reg[28]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/i_axi_spi_top_jesd204_0_0/\rx_32_c/stat2_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_lite_ipif/I_SLAVE_ATTACHMENT/s_axi_rresp_reg_reg[0]' (FDRE) to 'inst/jesd204_block_ii_1/i_axi_lite_ipif/I_SLAVE_ATTACHMENT/s_axi_rresp_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/\i_axi_lite_ipif/I_SLAVE_ATTACHMENT/s_axi_rresp_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/i_axi_lite_ipif/I_SLAVE_ATTACHMENT/s_axi_bresp_reg_reg[0]' (FDRE) to 'inst/jesd204_block_ii_1/i_axi_lite_ipif/I_SLAVE_ATTACHMENT/s_axi_bresp_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/\i_axi_lite_ipif/I_SLAVE_ATTACHMENT/s_axi_bresp_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/rxstatus_r_reg[6]' (FDE) to 'inst/jesd204_block_ii_1/rxstatus_r_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/rxstatus_r_reg[7]' (FDE) to 'inst/jesd204_block_ii_1/rxstatus_r_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/rxstatus_r_reg[8]' (FDE) to 'inst/jesd204_block_ii_1/rxstatus_r_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/jesd204_block_ii_1/rxstatus2_r_reg[8]' (FDE) to 'inst/jesd204_block_ii_1/rxstatus2_r_reg[9]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/\rxstatus_r_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/jesd204_block_ii_1/\rxstatus2_r_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (ila_align_c/data_d_reg[7]) is unused and will be removed from module jesd204_v7_2_2_rx_lane_32__1.
+WARNING: [Synth 8-3332] Sequential element (ila_align_c/data_d_reg[6]) is unused and will be removed from module jesd204_v7_2_2_rx_lane_32__1.
+WARNING: [Synth 8-3332] Sequential element (ila_align_c/data_d_reg[5]) is unused and will be removed from module jesd204_v7_2_2_rx_lane_32__1.
+WARNING: [Synth 8-3332] Sequential element (ila_align_c/data_d_reg[4]) is unused and will be removed from module jesd204_v7_2_2_rx_lane_32__1.
+WARNING: [Synth 8-3332] Sequential element (ila_align_c/data_d_reg[3]) is unused and will be removed from module jesd204_v7_2_2_rx_lane_32__1.
+WARNING: [Synth 8-3332] Sequential element (ila_align_c/data_d_reg[2]) is unused and will be removed from module jesd204_v7_2_2_rx_lane_32__1.
+WARNING: [Synth 8-3332] Sequential element (ila_align_c/data_d_reg[1]) is unused and will be removed from module jesd204_v7_2_2_rx_lane_32__1.
+WARNING: [Synth 8-3332] Sequential element (ila_align_c/data_d_reg[0]) is unused and will be removed from module jesd204_v7_2_2_rx_lane_32__1.
+WARNING: [Synth 8-3332] Sequential element (ila_align_c/data_d_reg[7]) is unused and will be removed from module jesd204_v7_2_2_rx_lane_32.
+WARNING: [Synth 8-3332] Sequential element (ila_align_c/data_d_reg[6]) is unused and will be removed from module jesd204_v7_2_2_rx_lane_32.
+WARNING: [Synth 8-3332] Sequential element (ila_align_c/data_d_reg[5]) is unused and will be removed from module jesd204_v7_2_2_rx_lane_32.
+WARNING: [Synth 8-3332] Sequential element (ila_align_c/data_d_reg[4]) is unused and will be removed from module jesd204_v7_2_2_rx_lane_32.
+WARNING: [Synth 8-3332] Sequential element (ila_align_c/data_d_reg[3]) is unused and will be removed from module jesd204_v7_2_2_rx_lane_32.
+WARNING: [Synth 8-3332] Sequential element (ila_align_c/data_d_reg[2]) is unused and will be removed from module jesd204_v7_2_2_rx_lane_32.
+WARNING: [Synth 8-3332] Sequential element (ila_align_c/data_d_reg[1]) is unused and will be removed from module jesd204_v7_2_2_rx_lane_32.
+WARNING: [Synth 8-3332] Sequential element (ila_align_c/data_d_reg[0]) is unused and will be removed from module jesd204_v7_2_2_rx_lane_32.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/lmfc_c/bacc_calc_reg[3]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/data_d_reg[39]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/data_d_reg[38]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/data_d_reg[37]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/data_d_reg[36]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/data_d_reg[35]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/data_d_reg[34]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/data_d_reg[33]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/data_d_reg[32]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/data_d_reg[7]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/data_d_reg[6]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/data_d_reg[5]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/data_d_reg[4]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/data_d_reg[3]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/data_d_reg[2]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/data_d_reg[1]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/data_d_reg[0]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/err_d_reg[4]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/err_d_reg[0]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/sof_d_reg[0]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/somf_d_reg[0]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/eof_d_reg[0]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/align_out_c/eomf_d_reg[0]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat_reg[28]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[31]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[30]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[29]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[28]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[27]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[26]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[25]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[24]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[23]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[22]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[21]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[20]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[19]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[18]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[17]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[16]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[15]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[14]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[13]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[12]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[11]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[10]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[9]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/stat2_reg[8]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/min_lane_reg[2]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3332] Sequential element (rx_32_c/min_lane_reg[1]) is unused and will be removed from module jesd204_v7_2_2_top.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_jesd204_phy/inst/\jesd204_phy_block_i/axi_spi_top_jesd204_0_0_phy_gt /inst/\gt_rxresetfsm_i/recclk_mon_restart_count_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_jesd204_phy/inst/\jesd204_phy_block_i/axi_spi_top_jesd204_0_0_phy_gt /inst/\gt_rxresetfsm_i/recclk_mon_restart_count_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_jesd204_phy/inst/\jesd204_phy_block_i/axi_spi_top_jesd204_0_0_phy_gt /inst/\gt_rxresetfsm_i/RXDFEAGCHOLD_reg )
+INFO: [Synth 8-3332] Sequential element (gt_rxresetfsm_i/adapt_count_reset_reg) is unused and will be removed from module axi_spi_top_jesd204_0_0_phy_gt_init.
+INFO: [Synth 8-3332] Sequential element (gt_rxresetfsm_i/recclk_mon_restart_count_reg[1]) is unused and will be removed from module axi_spi_top_jesd204_0_0_phy_gt_init.
+INFO: [Synth 8-3332] Sequential element (gt_rxresetfsm_i/recclk_mon_restart_count_reg[0]) is unused and will be removed from module axi_spi_top_jesd204_0_0_phy_gt_init.
+INFO: [Synth 8-3332] Sequential element (gt_rxresetfsm_i/time_out_adapt_reg) is unused and will be removed from module axi_spi_top_jesd204_0_0_phy_gt_init.
+INFO: [Synth 8-3332] Sequential element (gt_rxresetfsm_i/RXDFEAGCHOLD_reg) is unused and will be removed from module axi_spi_top_jesd204_0_0_phy_gt_init.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:16 . Memory (MB): peak = 924.273 ; gain = 603.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------------------------+------------+----------+
+|      |RTL Partition                                |Replication |Instances |
++------+---------------------------------------------+------------+----------+
+|1     |muxpart__48                                  |           1|        56|
+|2     |axi_spi_top_jesd204_0_0_register_decode__GB1 |           1|        86|
+|3     |axi_spi_top_jesd204_0_0_block__GC0           |           1|     10384|
+|4     |axi_spi_top_jesd204_0_0_clocking__GC0        |           1|         2|
+|5     |axi_spi_top_jesd204_0_0_phy                  |           1|      1408|
++------+---------------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:25 ; elapsed = 00:01:33 . Memory (MB): peak = 924.273 ; gain = 603.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:35 . Memory (MB): peak = 924.273 ; gain = 603.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------------------------+------------+----------+
+|      |RTL Partition                                |Replication |Instances |
++------+---------------------------------------------+------------+----------+
+|1     |muxpart__48                                  |           1|        56|
+|2     |axi_spi_top_jesd204_0_0_register_decode__GB1 |           1|        86|
+|3     |axi_spi_top_jesd204_0_0_block__GC0           |           1|     10384|
+|4     |axi_spi_top_jesd204_0_0_clocking__GC0        |           1|         2|
+|5     |axi_spi_top_jesd204_0_0_phy                  |           1|      1408|
++------+---------------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:01:40 . Memory (MB): peak = 969.438 ; gain = 648.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:01:42 . Memory (MB): peak = 969.438 ; gain = 648.770
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:42 . Memory (MB): peak = 969.438 ; gain = 648.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:34 ; elapsed = 00:01:43 . Memory (MB): peak = 969.438 ; gain = 648.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:34 ; elapsed = 00:01:43 . Memory (MB): peak = 969.438 ; gain = 648.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:34 ; elapsed = 00:01:43 . Memory (MB): peak = 969.438 ; gain = 648.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:34 ; elapsed = 00:01:43 . Memory (MB): peak = 969.438 ; gain = 648.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG          |     1|
+|2     |BUFH          |     1|
+|3     |CARRY4        |   145|
+|4     |GTXE2_CHANNEL |     2|
+|5     |GTXE2_COMMON  |     1|
+|6     |IBUFDS_GTE2   |     1|
+|7     |LUT1          |    77|
+|8     |LUT2          |   293|
+|9     |LUT3          |   194|
+|10    |LUT4          |   276|
+|11    |LUT5          |   405|
+|12    |LUT6          |  1234|
+|13    |MUXF7         |    28|
+|14    |MUXF8         |     6|
+|15    |RAM64M        |    96|
+|16    |SRLC32E       |     7|
+|17    |FD            |    98|
+|18    |FDCE          |    18|
+|19    |FDPE          |    38|
+|20    |FDRE          |  2113|
+|21    |FDSE          |    71|
+|22    |IBUF          |     2|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:34 ; elapsed = 00:01:43 . Memory (MB): peak = 969.438 ; gain = 648.770
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:04 ; elapsed = 00:01:25 . Memory (MB): peak = 969.438 ; gain = 247.961
+Synthesis Optimization Complete : Time (s): cpu = 00:01:34 ; elapsed = 00:01:43 . Memory (MB): peak = 969.438 ; gain = 648.770
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 375 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_reset_data/xpm_cdc_async_rst_inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl:2]
+all_registers: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1467.984 ; gain = 498.547
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_reset_data/xpm_cdc_async_rst_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/jesd204_block_i/i_axi_spi_top_jesd204_0_0_reset_block/sync_core_rst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/jesd204_block_i/i_axi_spi_top_jesd204_0_0_reset_block/sync_core_rst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_reset_all/xpm_cdc_async_rst_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_reset_all/xpm_cdc_async_rst_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_reset_all/xpm_cdc_async_rst_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_reset_all/xpm_cdc_async_rst_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_reset_data/xpm_cdc_async_rst_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_reset_data/xpm_cdc_async_rst_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rx_sync'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rx_sync'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/i_axi_spi_top_jesd204_0_0_reset_block/sync_gt_resetdone'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/i_axi_spi_top_jesd204_0_0_reset_block/sync_gt_resetdone'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rxstatus_read'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rxstatus_read'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rxstatus_ack'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rxstatus_ack'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rxstatus2_read'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rxstatus2_read'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rxstatus2_ack'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rxstatus2_ack'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rx_sysref_captured'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/jesd204_block_i/sync_rx_sysref_captured'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_pll_lock/cdc_i'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_pll_lock/cdc_i'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_chan_rst_done/cdc_i'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_chan_rst_done/cdc_i'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_chan_rst_done/cdc_i'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_tx_chan_rst_done/cdc_i'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_pll_lock/cdc_i'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/i_jesd204_phy/inst/jesd204_phy_block_i/sync_rx_pll_lock/cdc_i'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 194 instances were transformed.
+  FD => FDRE: 98 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 96 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+397 Infos, 134 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:46 ; elapsed = 00:01:57 . Memory (MB): peak = 1467.984 ; gain = 1147.965
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado2018_wrk/axi_spi/axi_spi.runs/axi_spi_top_jesd204_0_0_synth_1/axi_spi_top_jesd204_0_0.dcp' has been generated.

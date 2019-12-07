@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1557204049">
+  <File Type="PWROPT-DCP" Name="axi_spi_top_wrapper_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="axi_spi_top_wrapper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="axi_spi_top_wrapper.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="axi_spi_top_wrapper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="axi_spi_top_wrapper_reports.tcl"/>
+  <File Type="BG-DRC" Name="axi_spi_top_wrapper.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="axi_spi_top_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="axi_spi_top_wrapper_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="axi_spi_top_wrapper.hwdef"/>
+  <File Type="OPT-DCP" Name="axi_spi_top_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="axi_spi_top_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="axi_spi_top_wrapper_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="axi_spi_top_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="axi_spi_top_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="axi_spi_top_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="axi_spi_top_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="axi_spi_top_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="axi_spi_top_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="axi_spi_top_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="axi_spi_top_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="axi_spi_top_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="axi_spi_top_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="axi_spi_top_wrapper_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="axi_spi_top_wrapper_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="axi_spi_top_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="axi_spi_top_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="axi_spi_top_wrapper_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="axi_spi_top_wrapper.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="axi_spi_top_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="axi_spi_top_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="axi_spi_top_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="axi_spi_top_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="axi_spi_top_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="axi_spi_top_wrapper_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="axi_spi_top_wrapper.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="axi_spi_top_wrapper_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="axi_spi_top_wrapper.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="axi_spi_top_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="axi_spi_top_wrapper.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="axi_spi_top_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="axi_spi_top_wrapper.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="axi_spi_top_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="axi_spi_top_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="axi_spi_top_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="axi_spi_top_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="axi_spi_top_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="axi_spi_top_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="axi_spi_top_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="axi_spi_top_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="axi_spi_top_wrapper.vdi"/>
+  <File Type="ROUTE-CLK" Name="axi_spi_top_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="axi_spi_top_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="axi_spi_top_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="axi_spi_top_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="axi_spi_top_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="axi_spi_top_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="axi_spi_top_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="axi_spi_top_wrapper_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="axi_spi_top_wrapper.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="axi_spi_top_wrapper.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="axi_spi_top_wrapper.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Tgate.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Tgate_width5.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inv.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/data_rearrange.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/init_delay.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/data_comb.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/err_detector.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/axi_spi_top/axi_spi_top.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/axi_spi_top/hdl/axi_spi_top_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/axi_spi_top/ip/axi_spi_top_axi_traffic_gen_0_data.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/axi_spi_top/ip/axi_spi_top_axi_traffic_gen_0_address.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/axi_spi_top/ip/axi_spi_top_axi_traffic_gen_1_data.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/axi_spi_top/ip/axi_spi_top_axi_traffic_gen_1_address.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/axi_spi_top/ip/axi_spi_top_axi_traffic_gen_2_data.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/axi_spi_top/ip/axi_spi_top_axi_traffic_gen_2_address.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="axi_spi_top_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/axi_spi_top_constrs.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/axi_spi_top_constrs.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_Tgate_width5_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_Tgate_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_data_rearrange_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_util_ds_buf_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_Tgate_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_inv_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_Tgate_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_axi_quad_spi_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_axi_traffic_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_init_delay_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_init_delay_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_axi_traffic_gen_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_axi_traffic_gen_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_dds_compiler_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_vio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_err_detector_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_data_comb_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_uart_ila_top_0_0"/>
+</GenRun>

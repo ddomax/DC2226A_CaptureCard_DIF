@@ -1,0 +1,107 @@
+{
+   ExpandedHierarchyInLayout: "",
+   PinnedBlocks: "",
+   PinnedPorts: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port GBT_REFCLK_n -pg 1 -y -1060 -defaultsOSRD
+preplace port GBT_REFCLK_p -pg 1 -y -1020 -defaultsOSRD
+preplace port resetn -pg 1 -y -130 -defaultsOSRD
+preplace port diff_clock_rtl_0 -pg 1 -y 20 -defaultsOSRD
+preplace port rx_0_0 -pg 1 -y -1090 -defaultsOSRD
+preplace port MISO -pg 1 -y 20 -defaultsOSRD
+preplace port tx_0_0 -pg 1 -y -1110 -defaultsOSRD
+preplace port MOSI -pg 1 -y -40 -defaultsOSRD
+preplace port sclk -pg 1 -y 180 -defaultsOSRD
+preplace portBus rx_sync_p -pg 1 -y -710 -defaultsOSRD
+preplace portBus CS -pg 1 -y 430 -defaultsOSRD
+preplace portBus rxn -pg 1 -y 100 -defaultsOSRD -right
+preplace portBus rx_sync_n -pg 1 -y -690 -defaultsOSRD
+preplace portBus rxp -pg 1 -y 50 -defaultsOSRD -right
+preplace inst vio_0 -pg 1 -lvl 6 -y -780 -defaultsOSRD
+preplace inst dds_compiler_0 -pg 1 -lvl 6 -y -930 -defaultsOSRD
+preplace inst uart_ila_top_0 -pg 1 -lvl 9 -y -1110 -defaultsOSRD
+preplace inst rst_clk_wiz_0_100M -pg 1 -lvl 2 -y -40 -defaultsOSRD
+preplace inst data_comb_0 -pg 1 -lvl 8 -y -1150 -defaultsOSRD
+preplace inst err_detector_0 -pg 1 -lvl 5 -y -900 -defaultsOSRD
+preplace inst axi_traffic_gen_0 -pg 1 -lvl 4 -y -710 -defaultsOSRD
+preplace inst axi_traffic_gen_1 -pg 1 -lvl 4 -y -540 -defaultsOSRD
+preplace inst jtag_axi_0 -pg 1 -lvl 1 -y 320 -defaultsOSRD
+preplace inst axi_traffic_gen_2 -pg 1 -lvl 4 -y -400 -defaultsOSRD
+preplace inst jesd204_0 -pg 1 -lvl 4 -y -940 -defaultsOSRD
+preplace inst data_rearrange_0 -pg 1 -lvl 7 -y -1150 -defaultsOSRD
+preplace inst Tgate_0 -pg 1 -lvl 3 -y -340 -defaultsOSRD
+preplace inst init_delay_0 -pg 1 -lvl 5 -y -700 -defaultsOSRD
+preplace inst Tgate_1 -pg 1 -lvl 3 -y -220 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 30 -defaultsOSRD
+preplace inst init_delay_1 -pg 1 -lvl 5 -y -530 -defaultsOSRD
+preplace inst inv_0 -pg 1 -lvl 3 -y -920 -defaultsOSRD
+preplace inst Tgate_width5_0 -pg 1 -lvl 3 -y 420 -defaultsOSRD
+preplace inst util_ds_buf_0 -pg 1 -lvl 7 -y -700 -defaultsOSRD
+preplace inst Tgate_3 -pg 1 -lvl 3 -y -100 -defaultsOSRD
+preplace inst jtag_axi_0_axi_periph -pg 1 -lvl 3 -y -620 -defaultsOSRD
+preplace inst axi_quad_spi_0 -pg 1 -lvl 2 -y 230 -defaultsOSRD
+preplace netloc data_comb_0_o_data 1 8 1 2870
+preplace netloc data_rearrange_0_adc0_sample1 1 7 1 N
+preplace netloc axi_quad_spi_0_io1_t 1 2 1 630
+preplace netloc Tgate_1_O 1 2 2 N 180 1010
+preplace netloc axi_traffic_gen_1_M_AXI_LITE_CH1 1 2 3 630 -1120 NJ -1120 1440
+preplace netloc jtag_axi_0_axi_periph_M01_AXI 1 3 1 1070
+preplace netloc uart_ila_top_0_tx_0 1 9 1 N
+preplace netloc jesd204_0_rx_tvalid 1 4 3 1480 -1140 N -1140 N
+preplace netloc clk_wiz_0_locked 1 1 1 190
+preplace netloc jtag_axi_0_axi_periph_M00_AXI 1 1 3 210 -860 NJ -860 1020
+preplace netloc util_ds_buf_0_OBUF_DS_N 1 7 3 N -690 N -690 N
+preplace netloc jesd204_0_rx_sync 1 4 3 1460 -820 1810 -700 N
+preplace netloc rxp_1 1 3 7 1080 50 NJ 50 N 50 N 50 N 50 N 50 N
+preplace netloc axi_quad_spi_0_ss_o 1 2 1 620
+preplace netloc axi_traffic_gen_2_M_AXI_LITE_CH1 1 2 3 650 -850 1030J -630 1430
+preplace netloc jesd204_0_rx_frame_error 1 4 1 1470
+preplace netloc rx_0_0_1 1 0 9 NJ -1090 NJ -1090 NJ -1090 1040J -1100 NJ -1100 NJ -1100 2220J -1050 NJ -1050 2880J
+preplace netloc init_delay_1_o_resetn 1 3 3 1100 -300 NJ -300 1800
+preplace netloc rxn_1 1 3 7 1090 100 NJ 100 N 100 N 100 N 100 N 100 N
+preplace netloc util_ds_buf_0_OBUF_DS_P 1 7 3 N -710 N -710 N
+preplace netloc diff_clock_rtl_0_1 1 0 1 N
+preplace netloc jtag_axi_0_M_AXI 1 1 2 160J -160 570
+preplace netloc err_detector_0_rx_error_hold 1 5 1 1830
+preplace netloc axi_traffic_gen_0_done 1 4 1 N
+preplace netloc GBT_REFCLK_n_1 1 0 4 N -1060 N -1060 N -1060 1090
+preplace netloc axi_traffic_gen_0_M_AXI_LITE_CH1 1 2 3 590 -1130 NJ -1130 1450
+preplace netloc vio_0_probe_out0 1 5 2 1850 -690 2240
+preplace netloc jesd204_0_rx_tdata 1 4 3 1470 -1160 N -1160 N
+preplace netloc GBT_REFCLK_p_1 1 0 4 N -1020 N -1020 N -1020 1040
+preplace netloc axi_quad_spi_0_io0_o 1 2 1 600
+preplace netloc vio_0_probe_out1 1 5 2 1860 -680 2230
+preplace netloc resetn_1 1 0 3 NJ -130 170 -920 N
+preplace netloc jesd204_0_rx_core_clk_out 1 4 5 1460 -980 1840 -1120 2240 -1240 N -1240 2880
+preplace netloc axi_quad_spi_0_sck_o 1 2 1 640
+preplace netloc axi_quad_spi_0_ss_t 1 2 1 570
+preplace netloc vio_0_probe_out2 1 4 3 1480 -630 NJ -630 2220
+preplace netloc inv_0_O 1 3 6 1060 -1110 N -1110 N -1110 2240 -1060 N -1060 2870
+preplace netloc clk_wiz_0_clk_out1 1 0 5 -70 240 180 -150 560 -990 1040 -320 1460
+preplace netloc Tgate_width5_0_O 1 2 2 N 300 1000
+preplace netloc axi_quad_spi_0_io1_o 1 2 1 620
+preplace netloc data_rearrange_0_adc1_sample0 1 7 1 N
+preplace netloc Tgate_3_O 1 2 2 NJ 240 1000
+preplace netloc err_detector_0_err_flag 1 5 1 1820
+preplace netloc data_rearrange_0_adc1_sample1 1 7 1 N
+preplace netloc axi_traffic_gen_1_done 1 4 1 N
+preplace netloc Net1 1 3 7 N -210 N -210 N -210 N -210 N -210 N -210 3080
+preplace netloc Net 1 3 7 1030 -310 N -310 N -310 N -310 N -310 N -310 3090
+preplace netloc Tgate_0_O 1 2 2 N 120 1020
+preplace netloc Net2 1 3 7 NJ 430 N 430 N 430 N 430 N 430 N 430 N
+preplace netloc axi_quad_spi_0_io0_t 1 2 1 610
+preplace netloc rst_clk_wiz_0_100M_interconnect_aresetn 1 2 1 590
+preplace netloc rst_clk_wiz_0_100M_peripheral_aresetn 1 0 4 -60 250 200 -140 580 -980 1050
+preplace netloc data_rearrange_0_adc0_sample0 1 7 1 N
+preplace netloc init_delay_0_o_resetn 1 3 3 1100 -620 NJ -620 1800
+preplace netloc Net3 1 3 7 N -90 NJ -90 N -90 N -90 N -90 N -90 3070
+preplace netloc axi_quad_spi_0_sck_t 1 2 1 650
+levelinfo -pg 1 -90 50 390 850 1266 1650 2040 2410 2730 2980 3120 -top -1600 -bot 1020
+",
+}
+{
+   da_axi4_cnt: "6",
+   da_board_cnt: "5",
+   da_clkrst_cnt: "17",
+}

@@ -1,0 +1,750 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat May  4 18:55:48 2019
+# Process ID: 10656
+# Current directory: D:/Vivado2018_wrk/axi_spi_xcross
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9212 D:\Vivado2018_wrk\axi_spi_xcross\axi_spi.xpr
+# Log file: D:/Vivado2018_wrk/axi_spi_xcross/vivado.log
+# Journal file: D:/Vivado2018_wrk/axi_spi_xcross\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado2018_wrk/UART_ILA_pack/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:12 . Memory (MB): peak = 941.629 ; gain = 186.734
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+Adding cell -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:ip:jtag_axi:1.2 - jtag_axi_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_100M
+Adding cell -- xilinx.com:module_ref:Tgate:1.0 - Tgate_0
+Adding cell -- xilinx.com:module_ref:Tgate:1.0 - Tgate_1
+Adding cell -- xilinx.com:module_ref:Tgate:1.0 - Tgate_3
+Adding cell -- xilinx.com:module_ref:Tgate_width5:1.0 - Tgate_width5_0
+Adding cell -- xilinx.com:ip:jesd204:7.2 - jesd204_0
+Adding cell -- xilinx.com:ip:util_ds_buf:2.1 - util_ds_buf_0
+Adding cell -- xilinx.com:module_ref:inv:1.0 - inv_0
+Adding cell -- xilinx.com:module_ref:data_rearrange:1.0 - data_rearrange_0
+Adding cell -- xilinx.com:ip:axi_traffic_gen:3.0 - axi_traffic_gen_0
+Adding cell -- xilinx.com:module_ref:init_delay:1.0 - init_delay_0
+Adding cell -- xilinx.com:ip:axi_traffic_gen:3.0 - axi_traffic_gen_1
+Adding cell -- xilinx.com:ip:axi_traffic_gen:3.0 - axi_traffic_gen_2
+Adding cell -- xilinx.com:module_ref:init_delay:1.0 - init_delay_1
+Adding cell -- xilinx.com:ip:dds_compiler:6.0 - dds_compiler_0
+Adding cell -- xilinx.com:ip:vio:3.0 - vio_0
+Adding cell -- xilinx.com:user:uart_ila_top:1.0 - uart_ila_top_0
+Adding cell -- xilinx.com:module_ref:data_comb:1.0 - data_comb_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sclk(clk) and /Tgate_3/IO(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /jesd204_0/rx_sync(undef) and /util_ds_buf_0/OBUF_IN(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /resetn(rst) and /inv_0/I(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /inv_0/O(undef) and /uart_ila_top_0/reset_0(rst)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <axi_spi_top> from BD file <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1058.531 ; gain = 78.711
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference err_detector err_detector_0
+set_property location {5 1536 -902} [get_bd_cells err_detector_0]
+connect_bd_net [get_bd_pins jesd204_0/rx_frame_error] [get_bd_pins err_detector_0/rx_error]
+connect_bd_net [get_bd_pins err_detector_0/rx_clk] [get_bd_pins jesd204_0/rx_core_clk_out]
+startgroup
+set_property -dict [list CONFIG.C_NUM_PROBE_OUT {3} CONFIG.C_NUM_PROBE_IN {1}] [get_bd_cells vio_0]
+endgroup
+connect_bd_net [get_bd_pins vio_0/probe_in0] [get_bd_pins err_detector_0/err_flag]
+connect_bd_net [get_bd_pins vio_0/probe_out2] [get_bd_pins err_detector_0/clr_err]
+update_module_reference axi_spi_top_err_detector_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rx_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'rx_clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado2018_wrk/UART_ILA_pack/ip_repo'.
+Upgrading 'D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd'
+INFO: [IP_Flow 19-1972] Upgraded axi_spi_top_err_detector_0_0 from err_detector_v1_0 1.0 to err_detector_v1_0 1.0
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'rx_error_hold'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'axi_spi_top_err_detector_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'axi_spi_top_err_detector_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd> 
+Wrote  : <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/ui/bd_f1a590f5.ui> 
+update_compile_order -fileset sources_1
+startgroup
+set_property -dict [list CONFIG.C_PROBE_IN1_WIDTH {8} CONFIG.C_NUM_PROBE_IN {2}] [get_bd_cells vio_0]
+endgroup
+connect_bd_net [get_bd_pins vio_0/probe_in1] [get_bd_pins err_detector_0/rx_error_hold]
+save_bd_design
+Wrote  : <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd> 
+Wrote  : <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/ui/bd_f1a590f5.ui> 
+validate_bd_design
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+CRITICAL WARNING: [BD 41-1347] Reset pin /axi_traffic_gen_1/s_axi_aresetn (associated clock /axi_traffic_gen_1/s_axi_aclk) is connected to asynchronous reset source /init_delay_0/o_resetn.
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_clk_wiz_0_100M/peripheral_aresetn.
+CRITICAL WARNING: [BD 41-1347] Reset pin /axi_traffic_gen_2/s_axi_aresetn (associated clock /axi_traffic_gen_2/s_axi_aclk) is connected to asynchronous reset source /init_delay_1/o_resetn.
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_clk_wiz_0_100M/peripheral_aresetn.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+WARNING: [BD 41-927] Following properties on pin /data_rearrange_0/rx_core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_jesd204_0_0_rx_core_clk_out 
+WARNING: [BD 41-927] Following properties on pin /init_delay_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_clk_wiz_0_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /init_delay_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_clk_wiz_0_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /uart_ila_top_0/rd_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_clk_wiz_0_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /uart_ila_top_0/wr_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_jesd204_0_0_rx_core_clk_out 
+validate_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1138.852 ; gain = 15.820
+save_bd_design
+Wrote  : <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd> 
+reset_run synth_1
+reset_run axi_spi_top_vio_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'axi_spi_top.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/synth/axi_spi_top.v
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/sim/axi_spi_top.v
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hdl/axi_spi_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_quad_spi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_width5_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jesd204_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ds_buf_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inv_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_rearrange_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block init_delay_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block init_delay_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_comb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block uart_ila_top_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_compiler_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block err_detector_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_auto_pc_0/axi_spi_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hw_handoff/axi_spi_top.hwh
+Generated Block Design Tcl file D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hw_handoff/axi_spi_top_bd.tcl
+Generated Hardware Definition File D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/synth/axi_spi_top.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP axi_spi_top_xbar_0, cache-ID = 694e78f44ea6ce1c; cache size = 285.147 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP axi_spi_top_auto_pc_0, cache-ID = 7b4b3e208e51f1ad; cache size = 285.147 MB.
+[Sat May  4 19:03:23 2019] Launched axi_spi_top_vio_0_0_synth_1, axi_spi_top_err_detector_0_0_synth_1, synth_1...
+Run output will be captured here:
+axi_spi_top_vio_0_0_synth_1: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/axi_spi_top_vio_0_0_synth_1/runme.log
+axi_spi_top_err_detector_0_0_synth_1: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/axi_spi_top_err_detector_0_0_synth_1/runme.log
+synth_1: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/synth_1/runme.log
+[Sat May  4 19:03:24 2019] Launched impl_1...
+Run output will be captured here: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1274.012 ; gain = 115.809
+set_param general.maxThreads 8
+8
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.1
+  **** Build date : Apr  4 2018-19:32:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1973] Mismatch between the design programmed into the device xc7k325t (JTAG device index = 0) and the probes file(s) D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx.
+ The device core at location uuid_B28A03A2D3565B57A846496B06C405AD, has 0 VIO input port(s), but the core in the probes file(s) have 2 VIO input port(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2275.492 ; gain = 168.684
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+INFO: [Labtools 27-1967] Uploading output probe values from VIO core [hw_vio_1], for hw_probes which did not have this property set
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+set_property OUTPUT_VALUE 1 [get_hw_probes axi_spi_top_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes axi_spi_top_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+set_property OUTPUT_VALUE 1 [get_hw_probes axi_spi_top_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes axi_spi_top_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+set_property OUTPUT_VALUE 1 [get_hw_probes axi_spi_top_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes axi_spi_top_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado2018_wrk/UART_ILA_pack/ip_repo'.
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:uart_ila_top:1.0 [get_ips  axi_spi_top_uart_ila_top_0_0] -log ip_upgrade.log
+Upgrading 'D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd'
+INFO: [IP_Flow 19-1972] Upgraded axi_spi_top_uart_ila_top_0_0 from uart_ila_top_v1_0 1.0 to uart_ila_top_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /inv_0/O(undef) and /uart_ila_top_0_upgraded_ipi/reset_0(rst)
+Wrote  : <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Vivado2018_wrk/axi_spi_xcross/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips axi_spi_top_uart_ila_top_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+CRITICAL WARNING: [BD 41-1347] Reset pin /axi_traffic_gen_1/s_axi_aresetn (associated clock /axi_traffic_gen_1/s_axi_aclk) is connected to asynchronous reset source /init_delay_0/o_resetn.
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_clk_wiz_0_100M/peripheral_aresetn.
+CRITICAL WARNING: [BD 41-1347] Reset pin /axi_traffic_gen_2/s_axi_aresetn (associated clock /axi_traffic_gen_2/s_axi_aclk) is connected to asynchronous reset source /init_delay_1/o_resetn.
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_clk_wiz_0_100M/peripheral_aresetn.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+WARNING: [BD 41-927] Following properties on pin /data_rearrange_0/rx_core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_jesd204_0_0_rx_core_clk_out 
+WARNING: [BD 41-927] Following properties on pin /init_delay_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_clk_wiz_0_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /init_delay_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_clk_wiz_0_0_clk_out1 
+Wrote  : <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd> 
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/synth/axi_spi_top.v
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/sim/axi_spi_top.v
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hdl/axi_spi_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_quad_spi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_width5_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jesd204_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ds_buf_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inv_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_rearrange_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block init_delay_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block init_delay_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_comb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block uart_ila_top_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_compiler_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block err_detector_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_auto_pc_0/axi_spi_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hw_handoff/axi_spi_top.hwh
+Generated Block Design Tcl file D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hw_handoff/axi_spi_top_bd.tcl
+Generated Hardware Definition File D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/synth/axi_spi_top.hwdef
+generate_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 2383.000 ; gain = 55.918
+catch { config_ip_cache -export [get_ips -all axi_spi_top_xbar_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP axi_spi_top_xbar_0, cache-ID = 694e78f44ea6ce1c; cache size = 286.363 MB.
+catch { config_ip_cache -export [get_ips -all axi_spi_top_uart_ila_top_0_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP axi_spi_top_auto_pc_0, cache-ID = 7b4b3e208e51f1ad; cache size = 286.363 MB.
+export_ip_user_files -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+launch_runs -jobs 8 axi_spi_top_uart_ila_top_0_0_synth_1
+[Sat May  4 20:01:00 2019] Launched axi_spi_top_uart_ila_top_0_0_synth_1...
+Run output will be captured here: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/axi_spi_top_uart_ila_top_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -directory D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files -ipstatic_source_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/modelsim} {questa=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/questa} {riviera=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/riviera} {activehdl=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+update_module_reference axi_spi_top_data_comb_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado2018_wrk/UART_ILA_pack/ip_repo'.
+Upgrading 'D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/axi_spi_top_data_comb_0_0_synth_1
+
+INFO: [IP_Flow 19-1972] Upgraded axi_spi_top_data_comb_0_0 from data_comb_v1_0 1.0 to data_comb_v1_0 1.0
+Wrote  : <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd> 
+report_ip_status -name ip_status 
+validate_bd_design
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+CRITICAL WARNING: [BD 41-1347] Reset pin /axi_traffic_gen_1/s_axi_aresetn (associated clock /axi_traffic_gen_1/s_axi_aclk) is connected to asynchronous reset source /init_delay_0/o_resetn.
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_clk_wiz_0_100M/peripheral_aresetn.
+CRITICAL WARNING: [BD 41-1347] Reset pin /axi_traffic_gen_2/s_axi_aresetn (associated clock /axi_traffic_gen_2/s_axi_aclk) is connected to asynchronous reset source /init_delay_1/o_resetn.
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_clk_wiz_0_100M/peripheral_aresetn.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+WARNING: [BD 41-927] Following properties on pin /data_rearrange_0/rx_core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_jesd204_0_0_rx_core_clk_out 
+WARNING: [BD 41-927] Following properties on pin /init_delay_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_clk_wiz_0_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /init_delay_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_clk_wiz_0_0_clk_out1 
+validate_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2395.855 ; gain = 2.371
+save_bd_design
+Wrote  : <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'axi_spi_top.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/synth/axi_spi_top.v
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/sim/axi_spi_top.v
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hdl/axi_spi_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_quad_spi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_width5_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jesd204_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ds_buf_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inv_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_rearrange_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block init_delay_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block init_delay_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_comb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block uart_ila_top_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_compiler_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block err_detector_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_auto_pc_0/axi_spi_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hw_handoff/axi_spi_top.hwh
+Generated Block Design Tcl file D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hw_handoff/axi_spi_top_bd.tcl
+Generated Hardware Definition File D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/synth/axi_spi_top.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP axi_spi_top_xbar_0, cache-ID = 694e78f44ea6ce1c; cache size = 286.363 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP axi_spi_top_auto_pc_0, cache-ID = 7b4b3e208e51f1ad; cache size = 286.363 MB.
+[Sat May  4 20:03:25 2019] Launched axi_spi_top_uart_ila_top_0_0_synth_1, axi_spi_top_data_comb_0_0_synth_1, synth_1...
+Run output will be captured here:
+axi_spi_top_uart_ila_top_0_0_synth_1: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/axi_spi_top_uart_ila_top_0_0_synth_1/runme.log
+axi_spi_top_data_comb_0_0_synth_1: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/axi_spi_top_data_comb_0_0_synth_1/runme.log
+synth_1: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/synth_1/runme.log
+[Sat May  4 20:03:25 2019] Launched impl_1...
+Run output will be captured here: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2443.613 ; gain = 40.914
+set_property OUTPUT_VALUE 1 [get_hw_probes axi_spi_top_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes axi_spi_top_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2730.867 ; gain = 196.879
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+set_property OUTPUT_VALUE 1 [get_hw_probes axi_spi_top_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes axi_spi_top_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+update_module_reference axi_spi_top_data_comb_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado2018_wrk/UART_ILA_pack/ip_repo'.
+Upgrading 'D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd'
+INFO: [IP_Flow 19-1972] Upgraded axi_spi_top_data_comb_0_0 from data_comb_v1_0 1.0 to data_comb_v1_0 1.0
+Wrote  : <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+CRITICAL WARNING: [BD 41-1347] Reset pin /axi_traffic_gen_1/s_axi_aresetn (associated clock /axi_traffic_gen_1/s_axi_aclk) is connected to asynchronous reset source /init_delay_0/o_resetn.
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_clk_wiz_0_100M/peripheral_aresetn.
+CRITICAL WARNING: [BD 41-1347] Reset pin /axi_traffic_gen_2/s_axi_aresetn (associated clock /axi_traffic_gen_2/s_axi_aclk) is connected to asynchronous reset source /init_delay_1/o_resetn.
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_clk_wiz_0_100M/peripheral_aresetn.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+WARNING: [BD 41-927] Following properties on pin /data_rearrange_0/rx_core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_jesd204_0_0_rx_core_clk_out 
+WARNING: [BD 41-927] Following properties on pin /init_delay_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_clk_wiz_0_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /init_delay_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_clk_wiz_0_0_clk_out1 
+Wrote  : <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd> 
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/synth/axi_spi_top.v
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/sim/axi_spi_top.v
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hdl/axi_spi_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_quad_spi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_width5_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jesd204_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ds_buf_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inv_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_rearrange_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block init_delay_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block init_delay_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_comb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block uart_ila_top_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_compiler_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block err_detector_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_auto_pc_0/axi_spi_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hw_handoff/axi_spi_top.hwh
+Generated Block Design Tcl file D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hw_handoff/axi_spi_top_bd.tcl
+Generated Hardware Definition File D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/synth/axi_spi_top.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP axi_spi_top_xbar_0, cache-ID = 694e78f44ea6ce1c; cache size = 287.359 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP axi_spi_top_auto_pc_0, cache-ID = 7b4b3e208e51f1ad; cache size = 287.359 MB.
+[Sat May  4 21:11:00 2019] Launched axi_spi_top_data_comb_0_0_synth_1, synth_1...
+Run output will be captured here:
+axi_spi_top_data_comb_0_0_synth_1: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/axi_spi_top_data_comb_0_0_synth_1/runme.log
+synth_1: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/synth_1/runme.log
+[Sat May  4 21:11:00 2019] Launched impl_1...
+Run output will be captured here: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2785.359 ; gain = 50.477
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3007.824 ; gain = 212.934
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+set_property OUTPUT_VALUE 1 [get_hw_probes axi_spi_top_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes axi_spi_top_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {5.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {10.000} CONFIG.MMCM_CLKOUT1_DIVIDE {20} CONFIG.CLKOUT1_JITTER {112.316} CONFIG.CLKOUT1_PHASE_ERROR {89.971} CONFIG.CLKOUT2_JITTER {129.198} CONFIG.CLKOUT2_PHASE_ERROR {89.971}] [get_bd_cells clk_wiz_0]
+endgroup
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado2018_wrk/UART_ILA_pack/ip_repo'.
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:uart_ila_top:1.0 [get_ips  axi_spi_top_uart_ila_top_0_0] -log ip_upgrade.log
+Upgrading 'D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd'
+INFO: [IP_Flow 19-1972] Upgraded axi_spi_top_uart_ila_top_0_0 from uart_ila_top_v1_0 1.0 to uart_ila_top_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /inv_0/O(undef) and /uart_ila_top_0_upgraded_ipi/reset_0(rst)
+Wrote  : <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Vivado2018_wrk/axi_spi_xcross/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips axi_spi_top_uart_ila_top_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+CRITICAL WARNING: [BD 41-1347] Reset pin /axi_traffic_gen_1/s_axi_aresetn (associated clock /axi_traffic_gen_1/s_axi_aclk) is connected to asynchronous reset source /init_delay_0/o_resetn.
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_clk_wiz_0_100M/peripheral_aresetn.
+CRITICAL WARNING: [BD 41-1347] Reset pin /axi_traffic_gen_2/s_axi_aresetn (associated clock /axi_traffic_gen_2/s_axi_aclk) is connected to asynchronous reset source /init_delay_1/o_resetn.
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_clk_wiz_0_100M/peripheral_aresetn.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+WARNING: [BD 41-927] Following properties on pin /data_rearrange_0/rx_core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_jesd204_0_0_rx_core_clk_out 
+WARNING: [BD 41-927] Following properties on pin /init_delay_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_clk_wiz_0_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /init_delay_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_clk_wiz_0_0_clk_out1 
+Wrote  : <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd> 
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/synth/axi_spi_top.v
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/sim/axi_spi_top.v
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hdl/axi_spi_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_quad_spi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_width5_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jesd204_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ds_buf_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inv_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_rearrange_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block init_delay_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block init_delay_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_comb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block uart_ila_top_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_compiler_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block err_detector_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_auto_pc_0/axi_spi_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hw_handoff/axi_spi_top.hwh
+Generated Block Design Tcl file D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hw_handoff/axi_spi_top_bd.tcl
+Generated Hardware Definition File D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/synth/axi_spi_top.hwdef
+generate_target: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3252.211 ; gain = 34.973
+catch { config_ip_cache -export [get_ips -all axi_spi_top_clk_wiz_0_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_xbar_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP axi_spi_top_xbar_0, cache-ID = 694e78f44ea6ce1c; cache size = 287.359 MB.
+catch { config_ip_cache -export [get_ips -all axi_spi_top_uart_ila_top_0_0] }
+catch { config_ip_cache -export [get_ips -all axi_spi_top_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP axi_spi_top_auto_pc_0, cache-ID = 7b4b3e208e51f1ad; cache size = 287.359 MB.
+export_ip_user_files -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+launch_runs -jobs 8 {axi_spi_top_clk_wiz_0_0_synth_1 axi_spi_top_uart_ila_top_0_0_synth_1}
+[Sat May  4 21:42:10 2019] Launched axi_spi_top_clk_wiz_0_0_synth_1, axi_spi_top_uart_ila_top_0_0_synth_1...
+Run output will be captured here:
+axi_spi_top_clk_wiz_0_0_synth_1: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/axi_spi_top_clk_wiz_0_0_synth_1/runme.log
+axi_spi_top_uart_ila_top_0_0_synth_1: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/axi_spi_top_uart_ila_top_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -directory D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files -ipstatic_source_dir D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/modelsim} {questa=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/questa} {riviera=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/riviera} {activehdl=D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat May  4 21:42:51 2019] Launched axi_spi_top_clk_wiz_0_0_synth_1, axi_spi_top_uart_ila_top_0_0_synth_1, synth_1...
+Run output will be captured here:
+axi_spi_top_clk_wiz_0_0_synth_1: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/axi_spi_top_clk_wiz_0_0_synth_1/runme.log
+axi_spi_top_uart_ila_top_0_0_synth_1: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/axi_spi_top_uart_ila_top_0_0_synth_1/runme.log
+synth_1: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/synth_1/runme.log
+[Sat May  4 21:42:51 2019] Launched impl_1...
+Run output will be captured here: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3261.488 ; gain = 0.000
+set_param general.maxThreads 8
+8
+set_param general.maxThreads 8
+8
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3472.629 ; gain = 206.313
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+set_property OUTPUT_VALUE 1 [get_hw_probes axi_spi_top_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes axi_spi_top_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+open_bd_design {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out2]
+disconnect_bd_net /jesd204_0_rx_core_clk_out [get_bd_pins uart_ila_top_0/wr_clk_0]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado2018_wrk/UART_ILA_pack/ip_repo'.
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:uart_ila_top:1.0 [get_ips  axi_spi_top_uart_ila_top_0_0] -log ip_upgrade.log
+Upgrading 'D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd'
+INFO: [IP_Flow 19-1972] Upgraded axi_spi_top_uart_ila_top_0_0 from uart_ila_top_v1_0 1.0 to uart_ila_top_v1_0 1.0
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'rd_clk_0'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'wr_clk_0'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk_0'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'axi_spi_top_uart_ila_top_0_0'. These changes may impact your design.
+WARNING: [BD 41-1731] Type mismatch between connected pins: /inv_0/O(undef) and /uart_ila_top_0_upgraded_ipi/reset_0(rst)
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'axi_spi_top_uart_ila_top_0_0' has identified issues that may require user intervention. Please review the upgrade log 'd:/Vivado2018_wrk/axi_spi_xcross/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd> 
+Wrote  : <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/ui/bd_f1a590f5.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Vivado2018_wrk/axi_spi_xcross/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips axi_spi_top_uart_ila_top_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/uart_ila_top_0/clk_0
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+connect_bd_net [get_bd_pins uart_ila_top_0/clk_0] [get_bd_pins jesd204_0/rx_core_clk_out]
+validate_bd_design
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+INFO: JESD204 instance: Clock port 'tx_core_clk_out' frequency is set.
+CRITICAL WARNING: [BD 41-1347] Reset pin /axi_traffic_gen_1/s_axi_aresetn (associated clock /axi_traffic_gen_1/s_axi_aclk) is connected to asynchronous reset source /init_delay_0/o_resetn.
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_clk_wiz_0_100M/peripheral_aresetn.
+CRITICAL WARNING: [BD 41-1347] Reset pin /axi_traffic_gen_2/s_axi_aresetn (associated clock /axi_traffic_gen_2/s_axi_aclk) is connected to asynchronous reset source /init_delay_1/o_resetn.
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_clk_wiz_0_100M/peripheral_aresetn.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+WARNING: [BD 41-927] Following properties on pin /data_rearrange_0/rx_core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_jesd204_0_0_rx_core_clk_out 
+WARNING: [BD 41-927] Following properties on pin /init_delay_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_clk_wiz_0_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /init_delay_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=axi_spi_top_clk_wiz_0_0_clk_out1 
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3506.813 ; gain = 1.156
+report_ip_status -name ip_status 
+save_bd_design
+Wrote  : <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd> 
+Wrote  : <D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/ui/bd_f1a590f5.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'axi_spi_top.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/synth/axi_spi_top.v
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/sim/axi_spi_top.v
+VHDL Output written to : D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hdl/axi_spi_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_quad_spi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tgate_width5_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jesd204_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ds_buf_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inv_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_rearrange_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block init_delay_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block init_delay_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_comb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block uart_ila_top_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_compiler_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block err_detector_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_auto_pc_0/axi_spi_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hw_handoff/axi_spi_top.hwh
+Generated Block Design Tcl file D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hw_handoff/axi_spi_top_bd.tcl
+Generated Hardware Definition File D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/synth/axi_spi_top.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP axi_spi_top_xbar_0, cache-ID = 694e78f44ea6ce1c; cache size = 288.425 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP axi_spi_top_auto_pc_0, cache-ID = 7b4b3e208e51f1ad; cache size = 288.425 MB.
+[Sat May  4 22:02:07 2019] Launched axi_spi_top_uart_ila_top_0_0_synth_1, synth_1...
+Run output will be captured here:
+axi_spi_top_uart_ila_top_0_0_synth_1: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/axi_spi_top_uart_ila_top_0_0_synth_1/runme.log
+synth_1: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/synth_1/runme.log
+[Sat May  4 22:02:07 2019] Launched impl_1...
+Run output will be captured here: D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 3559.504 ; gain = 43.523
+set_param general.maxThreads 8
+8
+set_param general.maxThreads 8
+8
+set_param general.maxThreads 8
+8
+set_property PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/Vivado2018_wrk/axi_spi_xcross/axi_spi.runs/impl_1/axi_spi_top_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3772.129 ; gain = 201.668
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+set_property OUTPUT_VALUE 1 [get_hw_probes axi_spi_top_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes axi_spi_top_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {axi_spi_top_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]]
+refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"axi_spi_top_i/vio_0"}]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May  4 22:51:45 2019...
